@@ -1,0 +1,587 @@
+{
+	"formId": "me9",
+	"formName": "me9",
+	"formDesc": "me9",
+	"panels": [
+		{
+			"animate": "",
+			"beanName": "",
+			"desStyle": "margin:20px 0px 0px 0px",
+			"desStyleStr": "margin:20x 0 0 0;:undefined;|margin:20px 0 0 0",
+			"domClass": "",
+			"onclick": "",
+			"style": "",
+			"type": "form",
+			"cols": [
+				{
+					"col": "100",
+					"gridStyle": "align-items:center;:undefined;",
+					"panels": [
+						{
+							"animate": "",
+							"beanName": "",
+							"desStyle": "margin:0px 0px 0px 0px;border-width:0px;border-style:solid;border-color:#1d16f5;center:;background-color:#3889e5",
+							"desStyleStr": "margin:0 0 0 0;border-width:0;border-style:solid;border-color:#1d16f5;center:true;background-color:#3889e5;:undefined;|margin:0 0 0 0;border-width:0;border-style:solid;border-color:#1d16f5;center:true;background-color:#3889e5",
+							"domClass": "",
+							"onclick": "",
+							"style": "",
+							"type": "form",
+							"cols": [
+								{
+									"col": "100",
+									"gridStyle": "align-items:center;justify-content:center;:undefined;",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "0",
+											"desStyle": "display:inline-block;margin:20px 0px 20px 0px;width:90px;min-height:90px;display:inline-block",
+											"desStyleStr": "margin:20 0 20 0;width:90;min-height:90|margin:20 0 20 0;width:90;min-height:90",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "../img/logo.png",
+											"labelName": "",
+											"maxLength": "",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Image",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}, {
+			"animate": "",
+			"beanName": "",
+			"desStyle": "padding:0px 10px 0px 10px;background-color:#3889e5;margin:0px 0px 0px 0px",
+			"desStyleStr": "padding:0 10 0 10;background-color:#3889e5;margin:0 0 0 0;:undefined;|padding:0 10 0 10;background-color:#3889e5;margin:0 0 0 0",
+			"domClass": "",
+			"onclick": "",
+			"style": "",
+			"type": "form",
+			"cols": [
+				{
+					"col": "100",
+					"gridStyle": "align-items:center;justify-content:center;:undefined;",
+					"panels": [
+						{
+							"animate": "",
+							"beanName": "",
+							"desStyle": "background-color:#78ace6;padding:5px 5px 7px 5px;border-width:0px;border-style:solid;border-color:#f51629;margin:20px 0px 0px 0px",
+							"desStyleStr": "background-color:#78ace6;padding:5 5 7 5;border-width:0;border-style:solid;border-color:#f51629;:undefined;margin:20 0 0 0;|background-color:#78ace6;padding:5 5 7 5;border-width:0;border-style:solid;border-color:#f51629;margin:20 0 0 0",
+							"domClass": "",
+							"onclick": "",
+							"style": "",
+							"type": "form",
+							"cols": [
+								{
+									"col": "8",
+									"gridStyle": "align-items:center;:undefined;",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "0",
+											"desStyle": "font-size:30px;color:#ffffff;display:inline-block;display:inline-block",
+											"desStyleStr": "font-size:30;color:#ffffff|font-size:30;color:#ffffff",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "iconfont icon-shouji2",
+											"labelName": "",
+											"maxLength": "",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Icon",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}, {
+									"col": "58",
+									"gridStyle": "align-items:center;:undefined;",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "0",
+											"desStyle": "display:inline-block;margin:5px 0px 0px 0px;background-color:#78ace6;color:#ffffff;border-color:#78ace6;border-width:1px;display:inline-block",
+											"desStyleStr": "margin:5 0 0 0;background-color:#78ace6;color:#ffffff;border-color:#78ace6;border-width:1|margin:5 0 0 0;background-color:#78ace6;color:#ffffff;border-color:#78ace6;border-width:1",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "手机号",
+											"labelName": "",
+											"maxLength": "11",
+											"mustInput": "true",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "",
+											"placeholder": "请输入手机号",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Text",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}, {
+									"col": "33",
+									"gridStyle": "align-items:center;:undefined;",
+									"panels": []
+								}
+							]
+						}, {
+							"animate": "",
+							"beanName": "",
+							"desStyle": "background-color:#78ace6;margin:5px 0px 0px 0px;padding:5px 5px 7px 5px;border-width:0px;border-style:solid;border-color:#f50743",
+							"desStyleStr": "background-color:#78ace6;:undefined;margin:5 0 0 0;padding:5 5 7 5;border-width:0;border-style:solid;border-color:#f50743;|background-color:#78ace6;margin:5 0 0 0;padding:5 5 7 5;border-width:0;border-style:solid;border-color:#f50743",
+							"domClass": "",
+							"onclick": "",
+							"style": "",
+							"type": "form",
+							"cols": [
+								{
+									"col": "8",
+									"gridStyle": "align-items:center;:undefined;",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "0",
+											"desStyle": "font-size:30px;color:#ffffff;display:inline-block;display:inline-block",
+											"desStyleStr": "font-size:30;color:#ffffff|font-size:30;color:#ffffff",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "iconfont icon-yaochi",
+											"labelName": "",
+											"maxLength": "",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Icon",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}, {
+									"col": "53",
+									"gridStyle": "align-items:center;:undefined;",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "0",
+											"desStyle": "display:inline-block;margin:5px 0px 0px 0px;background-color:#78ace6;color:#ffffff;border-color:#78ace6;display:inline-block",
+											"desStyleStr": "margin:5 0 0 0;background-color:#78ace6;color:#ffffff;border-color:#78ace6|margin:5 0 0 0;background-color:#78ace6;color:#ffffff;border-color:#78ace6",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "验证码",
+											"labelName": "",
+											"maxLength": "",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "",
+											"placeholder": "请输入验证码",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Text",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}, {
+									"col": "38",
+									"gridStyle": "align-items:center;:undefined;",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "0",
+											"desStyle": "margin:3px 0px 0px 10px;display:inline-block;background-color:#78ace6;color:#ffffff;border-width:1px;border-style:solid;border-color:#ffffff;display:inline-block",
+											"desStyleStr": "margin:3 0 0 10;background-color:#78ace6;color:#ffffff;border-width:1;border-style:solid;border-color:#ffffff|margin:3 0 0 10;background-color:#78ace6;color:#ffffff;border-width:1;border-style:solid;border-color:#ffffff",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "获取验证码",
+											"labelName": "",
+											"maxLength": "",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Button",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}
+							]
+						}, {
+							"animate": "",
+							"beanName": "",
+							"desStyle": "margin:5px 0px 0px 0px;padding:10px 0px 0px 5px;border-color:#155fb4",
+							"desStyleStr": "margin:5 0 0 0;padding:10 0 0 5;:undefined;border-color:#155fb4;|margin:5 0 0 0;padding:10 0 0 5;border-color:#155fb4",
+							"domClass": "",
+							"onclick": "",
+							"style": "",
+							"type": "form",
+							"cols": [
+								{
+									"col": "100",
+									"gridStyle": "align-items:center;:undefined;",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "0",
+											"desStyle": "color:#ffffff;border-width:1px;border-style:solid;border-color:#ffffff;margin:0px 10px 0px 0px;display:inline-block;font-size:15px;display:inline-block",
+											"desStyleStr": "color:#ffffff;border-width:1;border-style:solid;border-color:#ffffff;margin:0 10 0 0;font-size:15|color:#ffffff;border-width:1;border-style:solid;border-color:#ffffff;margin:0 10 0 0;font-size:15",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "fa fa-check",
+											"labelName": "",
+											"maxLength": "",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Icon",
+											"type": "text",
+											"unit": ""
+										}, {
+											"animate": "",
+											"dataType": "0",
+											"desStyle": "color:#ffffff;display:inline-block;font-size:14px;display:inline-block",
+											"desStyleStr": "color:#ffffff;font-size:14|color:#ffffff;font-size:14",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "我已阅读《借款服务与隐私协议》",
+											"labelName": "",
+											"maxLength": "",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Label",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}
+							]
+						}, {
+							"animate": "",
+							"beanName": "",
+							"desStyle": "center:;padding:10px 0px 10px 0px",
+							"desStyleStr": "center:true;padding:10 0 10 0;:undefined;|center:true;padding:10 0 10 0",
+							"domClass": "",
+							"onclick": "",
+							"style": "",
+							"type": "form",
+							"cols": [
+								{
+									"col": "100",
+									"gridStyle": "align-items:center;justify-content:center;:undefined;",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "0",
+											"desStyle": "background-color:#155fb4;font-size:18px;color:#ffffff;width:95%;padding:10px 0px 10px 0px;display:inline-block;margin:20px 0px 0px 0px;border-color:#155fb4;display:inline-block",
+											"desStyleStr": "background-color:#155fb4;font-size:18;color:#ffffff;width:95%;padding:10 0 10 0;margin:20 0 0 0;border-color:#155fb4|background-color:#155fb4;font-size:18;color:#ffffff;width:95%;padding:10 0 10 0;margin:20 0 0 0;border-color:#155fb4",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "登录",
+											"labelName": "",
+											"maxLength": "",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "denglu()",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Button",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}
+							]
+						}, {
+							"animate": "",
+							"beanName": "",
+							"desStyle": "center:",
+							"desStyleStr": "center:true;:undefined;|center:true",
+							"domClass": "",
+							"onclick": "",
+							"style": "",
+							"type": "form",
+							"cols": [
+								{
+									"col": "38",
+									"gridStyle": "align-items:center;:undefined;",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "0",
+											"desStyle": "color:#ffffff;flex-end:;center:;margin:40px 0px 0px 40px;font-size:60px;display:inline-block;display:inline-block",
+											"desStyleStr": "color:#ffffff;flex-end:true;center:true;margin:40 0 0 40;font-size:60|color:#ffffff;flex-end:true;center:true;margin:40 0 0 40;font-size:60",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "iconfont icon-hengxian",
+											"labelName": "",
+											"maxLength": "",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Icon",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}, {
+									"col": "33",
+									"gridStyle": "align-items:center;:undefined;",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "0",
+											"desStyle": "center:;color:#ffffff;font-size:16px;display:inline-block;margin:40px 0px 10px 0px;display:inline-block",
+											"desStyleStr": "center:true;color:#ffffff;font-size:16;margin:40 0 10 0|center:true;color:#ffffff;font-size:16;margin:40 0 10 0",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "其他方式登录",
+											"labelName": "",
+											"maxLength": "",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Label",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}, {
+									"col": "28",
+									"gridStyle": "align-items:center;:undefined;",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "0",
+											"desStyle": "font-size:60px;color:#ffffff;margin:40px 0px 0px 10px;display:inline-block;display:inline-block",
+											"desStyleStr": "font-size:60;color:#ffffff;margin:40 0 0 10|font-size:60;color:#ffffff;margin:40 0 0 10",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "iconfont icon-hengxian",
+											"labelName": "",
+											"maxLength": "",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Icon",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}
+							]
+						}, {
+							"animate": "",
+							"beanName": "",
+							"desStyle": "padding:20px 0px 0px 80px;margin:0px 0px 90px 0px",
+							"desStyleStr": "padding:20 0 0 80;margin:0 0 0 0;:undefined;|padding:20 0 0 80;margin:0 0 90 0",
+							"domClass": "",
+							"onclick": "",
+							"style": "",
+							"type": "form",
+							"cols": [
+								{
+									"col": "65",
+									"gridStyle": "align-items:center;:undefined;",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "0",
+											"desStyle": "font-size:20px;color:#ffffff;margin:0px 0px 0px 0px;display:inline-block;display:inline-block",
+											"desStyleStr": "font-size:20;color:#ffffff;margin:0 0 0 0|font-size:20;color:#ffffff;margin:0 0 0 0",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "fa fa-qq",
+											"labelName": "",
+											"maxLength": "",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Icon",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}, {
+									"col": "35",
+									"gridStyle": "align-items:center;:undefined;",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "0",
+											"desStyle": "font-size:20px;color:#ffffff;display:inline-block;display:inline-block",
+											"desStyleStr": "font-size:20;color:#ffffff|font-size:20;color:#ffffff",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "fa fa-wechat",
+											"labelName": "",
+											"maxLength": "",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Icon",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

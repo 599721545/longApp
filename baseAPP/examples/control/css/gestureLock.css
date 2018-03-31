@@ -1,0 +1,56 @@
+
+.bg {
+	 margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#f0f0f0; 
+}
+
+#myCanvas {
+    position: absolute;
+    bottom: 40px;
+}
+
+.main {
+    display: block;
+    margin: 0 auto;
+    height: 130px;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 0px;
+    right: 0px;
+    color: #000000;
+}
+.dots{
+	height: 50px;
+	width: 50px;
+	margin: 10px auto 10px auto;
+}
+.dot{
+	width: 8px;
+	height: 8px;
+	margin: 2.5px;
+	float: left;
+	border-radius: 100%;
+	display: block;
+	border: 1px solid #19B2F1;
+	background-color: #FFFFFF;
+}
+.dot.on{
+	background-color: #19B2F1;
+	  animation: sploosh 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+/*.dot-2{background-color: #FFFFFF;}
+.dot-4{background-color: #FFFFFF;}
+.dot-8{background-color: #FFFFFF;}*/
+
+@keyframes sploosh {
+  0% {
+    box-shadow: 0 0 0 0px rgba(25, 178, 241, 0.7);;
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(25, 178, 241, 0);;
+  }
+}

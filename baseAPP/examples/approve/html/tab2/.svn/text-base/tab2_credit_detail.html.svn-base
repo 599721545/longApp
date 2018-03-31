@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/main.css" />
+		<link href="../../css/tab2.css" rel="stylesheet" />
+
+		<link rel="stylesheet" type="text/css" href="../../css/timeline.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/my-app.css" />
+
+		<style>
+			.mui-control-content {
+				background-color: white;
+				min-height: 920px;
+			}
+			
+			.mui-bar-nav.mui-bar .mui-icon{color: #3dbff9;}
+			.mui-slider-indicator.mui-segmented-control{ position: fixed;top:64px; z-index: 999; background: #ffffff; }
+			.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar{position: fixed;top:107px; z-index: 1000;    background: #3dbff9;}
+			.mui-segmented-control .mui-control-item{ line-height: 44px;}
+			.mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{color: #3dbff9;}
+			.mui-slider .mui-slider-group{ margin-top: 40px;}
+			.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{ border-top:none ;    background: #f6f6f6;}
+			
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">审批详情</h1>
+			<a id="caozuo" class="mui-icon mui-icon-compose mui-pull-right"></a>
+		</header>
+		<div class="mui-content">
+
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1mobile">
+						基本信息
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						要件查看
+					</a>
+					<a class="mui-control-item" href="#item3mobile">
+						审批详情
+					</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div id="tab1" class="mui-scroll">
+
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper tab2-doc">
+							<div id="tab2" class="mui-scroll">
+
+								<div class="mui-row card ">
+									<div class="mui-col-xs-2 ">
+										<div class="tab2-doc-img sfz"></div>
+										<div class="tab2-doc-title">身份证</div>
+									</div>
+									<div class="col-75"><img src="../../css/img/img.png" class="lazy lazy-fadeIn"><img src="../../css/img/img.png" class="lazy lazy-fadeIn"></div>
+								</div>
+								<div class="mui-row card">
+									<div class="mui-col-xs-2">
+										<div class="tab2-doc-img hkb"></div>
+										<div class="tab2-doc-title">户口本</div>
+									</div>
+									<div class="col-75"><img src="../../css/img/img.png" class="lazy lazy-fadeIn"><img src="../../css/img/img.png" class="lazy lazy-fadeIn"><img src="../../css/img/img.png" class="lazy lazy-fadeIn"></div>
+								</div>
+								<div class="mui-row card">
+									<div class="mui-col-xs-2">
+										<div class="tab2-doc-img yhls"></div>
+										<div class="tab2-doc-title">银行流水</div>
+									</div>
+									<div class="col-75"><img src="../../css/img/pdf.png" class="lazy lazy-fadeIn"><img src="../../css/img/excel.png" class="lazy lazy-fadeIn"><img src="../../css/img/img.png" class="lazy lazy-fadeIn"></div>
+								</div>
+								<div class="mui-row card">
+									<div class="mui-col-xs-2">
+										<div class="tab2-doc-img clxx"></div>
+										<div class="tab2-doc-title">车辆信息</div>
+									</div>
+									<div class="col-75"><img src="../../css/img/pdf.png" class="lazy lazy-fadeIn"><img src="../../css/img/word.png" class="lazy lazy-fadeIn"><img src="../../css/img/excel.png" class="lazy lazy-fadeIn"><img src="../../css/img/img.png" class="lazy lazy-fadeIn"></div>
+								</div>
+								<div class="mui-row card">
+									<div class="mui-col-xs-2">
+										<div class="tab2-doc-img dbp"></div>
+										<div class="tab2-doc-title">担保品</div>
+									</div>
+									<div class="col-75"><img src="../../css/img/excel.png" class="lazy lazy-fadeIn"><img src="../../css/img/txt.png" class="lazy lazy-fadeIn"><img src="../../css/img/word.png" class="lazy lazy-fadeIn"></div>
+								</div>
+								<div class="mui-row card">
+									<div class="mui-col-xs-2">
+										<div class="tab2-doc-img other"></div>
+										<div class="tab2-doc-title">其他资料</div>
+									</div>
+									<div class="col-75"><img src="../../css/img/excel.png" class="lazy lazy-fadeIn"><img src="../../css/img/txt.png" class="lazy lazy-fadeIn"><img src="../../css/img/word.png" class="lazy lazy-fadeIn"><img src="../../css/img/word.png" class="lazy lazy-fadeIn"></div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll3" class="mui-scroll-wrapper">
+							<div id="tab3" class="mui-scroll content-block">
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			
+			
+			
+			mui.init();
+
+			function loadCss(file) {
+				var cssTag = document.getElementById('loadCss');
+				var head = document.getElementsByTagName('head').item(0);
+				if(cssTag) head.removeChild(cssTag);
+				css = document.createElement('link');
+				css.href = file;
+				css.rel = 'stylesheet';
+				css.type = 'text/css';
+				head.appendChild(css);
+			}
+
+			function setHtml1(data) {
+				var html = '<div class="mui-card"><div id="aaa"class="mui-card-header">' + data.cifName +
+					'</div><div class="mui-card-content"><div class="mypro-block"><div class="prdname-top"><p class="prdname-top-l"><i class="prdname-lico"></i>' + data.prdName +
+					'</p><!--担保类型--><span>' + data.vouType +
+					'</span><!--担保方式--></div><div class="prdinfo-m"><div class="prdinfo-l"><p class="fogray">申请金额</p><p class="fogray"><span class="font28">' + data.applyAmt +
+					'</span>元</p></div><div class="prdinfo-r"><p class="fogray">总天数</p><p class="font24">' + data.totalDays +
+					'</p></div></div><p class="fogray">还款方式：' + data.repayType +
+					'</p></div></div>';
+				return html;
+			}
+
+			function setHtml3(data) {
+
+				var html = '<div class="timeline-item"><div class="timeline-item-divider"></div><div class="timeline-item-img"></div><div class="timeline-item-content"><div class="timeline-item-title">' + data.description +
+					'</div><div class="timeline-item-inner ' + data.state +
+					'"><div class="timeline-item-jiantou"></div><div class="timeline-item-state"></div><div class="timeline-item-assignee">' + data.assignee +
+					'</div><div class="timeline-item-date">' + data.end +
+					'</div><div class="timeline-item-line"></div><div class="timeline-item-idea">' + data.approveIdea +
+					'</div></div></div></div>';
+				return html;
+			}
+
+			mui.plusReady(function() {
+				plus.webview.currentWebview().setStyle({scrollIndicator:'none'});
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+
+			});
+			var html1 = '';
+			var html2 = '';
+			var html3 = '';
+
+			mui.get('../../json/tab2_credit_detail.json', {}, function(response) {
+				var html = '';
+				html += setHtml1(response.key_one);
+				html += '<div class="mui-card-footer"><div class="content-block"><div class="mui-row"><div class="mui-col-xs-3 myicol"><i class="myicol-1"></i><p>贷款信息</p></div><div class="mui-col-xs-3 myicol"><i class="myicol-2"></i><p>客户信息</p></div><div class="mui-col-xs-3 myicol"><i class="myicol-3"></i><p>担保信息</p></div><div class="mui-col-xs-3 myicol"><i class="myicol-4"></i><p>评级结果</p></div><div class="mui-col-xs-3 myicol"><i class="myicol-5"></i><p>费用信息</p></div><div class="mui-col-xs-3 myicol"><i class="myicol-6"></i><p>定量评分</p></div><div class="mui-col-xs-3 myicol"><i class="myicol-7"></i><p>定性评分</p></div><div class="mui-col-xs-3 myicol"><i class="myicol-8"></i><p>综合评分</p></div></div></div></div></div>';
+				document.getElementById("tab1").innerHTML = html;
+				appAnimation();
+			}, 'json');
+
+			mui.get('../../json/tab2_credit_process.json', {}, function(response) {
+				var html = '<div class="timeline">';
+				for(var i = 0; i < response.paramList.length; i++) {
+					html += setHtml3(response.paramList[i]);
+				}
+				html += '</div>';
+				document.getElementById("tab3").innerHTML = html;
+				html3 = html;
+			}, 'json');
+
+			var item2 = document.getElementById('item2mobile');
+			var item3 = document.getElementById('item3mobile');
+			
+			
+		
+			        document.getElementById('slider').addEventListener('slide', function(e) {
+				if(e.detail.slideNumber === 1) {
+					appListTabDocAnimation();
+					appAnimationRes();
+					appListProcessAnimationRes()
+				} else if(e.detail.slideNumber === 2) {
+					appListProcessAnimation();
+					appListTabDocAnimationRes();
+				} else {
+					appAnimation();
+					appListTabDocAnimationRes();
+				}
+			});
+			
+	
+			
+			
+			
+			var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+			mui('.mui-input-group').on('change', 'input', function() {
+				if(this.checked) {
+					sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+					//force repaint
+					sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+				}
+			});
+
+			document.getElementById("caozuo").addEventListener('tap', function() {
+				plus.webview.open('tab2_credit_process.html');
+			});
+
+			/*审批基本信息效果*/
+			function appAnimation() {
+				var myicol = document.getElementsByClassName('myicol');
+				var cut = myicol.length;
+				var time = 0;
+				mui.each(myicol, function(i, item) {
+					time = 100 * i;
+					if(i >= cut / 2) {
+						time = 100 * (i - (cut / 2 - 1)) - 50;
+					}
+					setTimeout(function() {
+						item.style.left = 0;
+					}, time);
+				});
+			}
+
+			/*审批基本信息效果还原*/
+			function appAnimationRes() {
+				var myicol = document.getElementsByClassName('myicol');
+				var cut = myicol.length;
+				var time = 0;
+				mui.each(myicol, function(i, item) {
+					item.style.left = '350px';
+				});
+			}
+
+			/*要件效果*/
+			function appListTabDocAnimation() {
+				var card = mui('.mui-row.card'); //$(".tab2-doc .row.card");
+				mui.each(card, function(i, item) {
+					var time = 100 * i;
+					setTimeout(function() {
+						item.style.left = 0;
+					}, time);
+				});
+			}
+
+			/*要件效果 还原*/
+			function appListTabDocAnimationRes() {
+				var card = mui('.mui-row.card'); //$(".tab2-doc .row.card");
+				mui.each(card, function(i, item) {
+					item.style.left = '350px';
+				});
+			}
+
+			/*审批效果*/
+			function appListProcessAnimation() {
+				var card = mui(".timeline-item-content");
+				var time = 0;
+				mui.each(card, function(i, item) {
+					time = 80 * i;
+					setTimeout(function() {
+						item.style.left = 0;
+					}, time)
+				});
+			}
+
+			/*审批效果 还原*/
+			function appListProcessAnimationRes() {
+				var card = mui(".timeline-item-content");
+				var time = 0;
+				mui.each(card, function(i, item) {
+					time = 80 * i;
+					setTimeout(function() {
+						item.style.left = '350px';
+					}, time)
+				});
+			}
+
+			
+		</script>
+		<!--<link rel="stylesheet" type="text/css" href="../../css/framework7.material.css" />-->
+	</body>
+
+</html>

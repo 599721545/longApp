@@ -1,0 +1,12 @@
+.form-ul.panel-0_0{background-color:#ffffff;display:flex;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}
+.form-ul.panel-0_0 > .col-auto:nth-child(1){}
+.form-ul.panel-0_0 > .col-auto:nth-child(1) .form-li.panel-1_0{    border-bottom: 1px solid #ECECEC;animation-duration:1s;animation-fill-mode:both;animation-name:bounceInUp;display:flex;listStep:100;padding:10px 0px 10px 0px;text-align:center;}
+.form-ul.panel-0_0 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1){align-items:center;justify-content:center;}
+.form-ul.panel-0_0 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .left-icon{animation-duration:1s;animation-fill-mode:both;animation-name:bounceInUp;color:#1e81d2;display:inline-block;font-size:32px;listStep:100;}
+.form-ul.panel-0_0 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(2){}
+.form-ul.panel-0_0 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(2) .icon-mid-add{ text-overflow: ellipsis; white-space: nowrap;animation-duration:1s;animation-fill-mode:both;animation-name:bounceInUp;display:inline-block;listStep:100;overflow: hidden;text-align:left;width:100%;}
+.form-ul.panel-0_0 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(2) .icon-mid-name{animation-duration:1s;animation-fill-mode:both;animation-name:bounceInUp;display:inline-block;font-size:16px;listStep:100;text-align:left;width:100%;}
+.form-ul.panel-0_0 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(3){align-items:center;justify-content:center;}
+.form-ul.panel-0_0 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(3) .icon-right-icon1{animation-duration:1s;animation-fill-mode:both;animation-name:bounceInUp;color:#609fd4;display:inline-block;font-size:26px;listStep:100;margin:0px 10px 0px 10px;}
+.form-ul.panel-0_0 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(3) .icon-right-icon2{animation-duration:1s;animation-fill-mode:both;animation-name:bounceInUp;color:#609fd4;display:inline-block;font-size:26px;listStep:100;margin:0px 10px 0px 10px;}
+.form-ul.panel-0_0 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(3) .icon-right-time{animation-duration:1s;animation-fill-mode:both;animation-name:bounceInUp;display:inline-block;listStep:100;width:100%;}

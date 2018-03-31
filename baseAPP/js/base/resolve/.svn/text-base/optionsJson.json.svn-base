@@ -1,0 +1,10 @@
+{
+	"sex":[
+		{"name":"男","value":"0"},
+		{"name":"女","value":"1"}
+	],
+	"yes_no":[
+		{"name":"否","value":"0"},
+		{"name":"是","value":"1"}
+	]
+}

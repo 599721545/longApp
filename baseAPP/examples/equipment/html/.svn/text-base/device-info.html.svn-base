@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<title>设备信息</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/custom/my-app.css" />
+	<style type="text/css">
+		body {
+			font-size: 14px;
+			background: #FFFFFF;
+		}
+		
+		.mui-content{
+			border: none;
+		}
+	</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a id="vendor">
+						手机品牌：
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="osName">
+						操作系统：
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="imei">
+						设备IMEI号：
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="uuid">
+						设备唯一标识：
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="position">
+						定位信息：正在获取中
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="ip">
+						IP地址：正在获取中
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="mac">
+						MAC地址：待完善
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="httpInfo">
+						HTTP信息：
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/base/common/deviceInfo.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init({});
+			mui.plusReady(function() {
+				
+				document.getElementById("osName").innerHTML = "操作系统：" + device.osName();
+				document.getElementById("imei").innerHTML = "设备IMEI号：" + device.imei();
+				document.getElementById("mac").innerHTML = "MAC地址：" + device.mac();
+				document.getElementById("httpInfo").innerHTML = "HTTP信息：" + device.httpInfo();
+				document.getElementById("uuid").innerHTML = "设备唯一标识：" + device.uuid();
+				document.getElementById("vendor").innerHTML = "手机品牌：" + device.vendor();
+				device.ip(function(ip){
+					document.getElementById("ip").innerHTML = "IP地址：" + ip;
+				});
+				device.postion(function(pos){
+					document.getElementById("position").innerHTML = "定位信息：" + pos;
+				});
+				
+				
+				plus.webview.currentWebview().setStyle({
+					scrollIndicator: 'none'
+				});
+
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+			});
+			
+			function back(id) {
+				var w = plus.webview.getWebviewById(id);
+				w.close();
+			}
+		</script>
+	</body>
+
+</html>

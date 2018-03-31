@@ -1,0 +1,17 @@
+.panel-0_0 > .col-auto:nth-child(1){}
+.panel-0_1 > .col-auto:nth-child(1){}
+.panel-0_1 > .col-auto:nth-child(1) .mui-card.panel-1_0{animation-delay:100ms;animation-duration:500ms;animation-fill-mode:both;animation-iteration-count:1;animation-name:bounce;display:flex;listStep:100;}
+.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1){}
+.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .card-content-inner-footer.panel-2_2{display:flex;text-align:left;}
+.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .mui-card-content.panel-2_1{display:flex;}
+.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .mui-card-header.panel-2_0{display:flex;text-align:right;}
+.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .panel-2_0 > .col-auto:nth-child(1){}
+.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .panel-2_0 > .col-auto:nth-child(1) .123{123;color:#e8275e;display:inline-block;font-size:16px;font-weight:bold;}
+.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .panel-2_0 > .col-auto:nth-child(2){}
+.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .panel-2_1 > .col-auto:nth-child(1){}
+.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .panel-2_1 > .col-auto:nth-child(1) .panel-3_0 > .col-auto:nth-child(1){}
+.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .panel-2_1 > .col-auto:nth-child(1) .panel-3_1 > .col-auto:nth-child(1){}
+.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .panel-2_1 > .col-auto:nth-child(1) .panel-3_1 > .col-auto:nth-child(2){}
+.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .panel-2_1 > .col-auto:nth-child(1) .panel-3_1 > .col-auto:nth-child(3){}
+.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .panel-2_1 > .col-auto:nth-child(1) .panel-3_1 > .col-auto:nth-child(4){}
+.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .panel-2_2 > .col-auto:nth-child(1){}

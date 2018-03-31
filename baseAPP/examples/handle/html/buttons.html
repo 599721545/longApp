@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/buttons.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-content-padded">
+				
+				<h5>左侧loading图标：</h5>
+				<button type="button" class="mui-btn mui-btn-primary">确认</button>
+				<h5>右侧loading图标：</h5>
+				<button type="button" class="mui-btn mui-btn-primary" data-loading-text="提交中" data-loading-icon-position="right">确认</button>
+				<h5>无loading图标：</h5>
+				<button type="button" class="mui-btn mui-btn-primary" data-loading-icon="">确认</button>
+				<h5>自定义loading图标：</h5>
+				<button type="button" class="mui-btn mui-btn-primary" data-loading-icon="mui-spinner mui-spinner-custom">确认</button>
+				<h5>其他button效果</h5>
+				<button type="button" class="mui-btn">确认</button>
+				<button type="button" class="mui-btn mui-btn-primary">确认 <span class="mui-badge mui-badge-primary">2</span></button>
+				
+				<p style="margin-top: 5px;margin-bottom: 25px;">当用户点击按钮后，需要向服务端提交数据或等待服务端响应时， 常常需要提示“正在提交”，并将按钮设置为disabled，避免用户重复点击、重复提交； 加载中按钮就实现了类似效果，点击如下按钮体验：
+				</p>
+			</div>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack: true //启用右滑关闭功能
+		});
+		mui(document.body).on('tap', '.mui-btn', function(e) {
+			mui(this).button('loading');
+			setTimeout(function() {
+				mui(this).button('reset');
+			}.bind(this), 1500);
+		});
+		mui.plusReady(function() {
+			plus.key.addEventListener('keydown', function(e) {
+				console.log(e.keyCode);
+				if(e.keyCode == 4) {
+					var w = plus.webview.currentWebview();
+					plus.screen.lockOrientation("portrait-primary");
+					plus.webview.close(w);
+				}
+			});
+		})
+
+		function back(id) {
+			var w = plus.webview.getWebviewById(id);
+			w.close();
+		}
+	</script>
+
+</html>

@@ -1,0 +1,54 @@
+.tab2-doc{
+	
+}
+.tab2-doc .mui-row{
+	transition: left .5s cubic-bezier(0.26, 0.79, 0.25, 1);left: 350px;
+    padding: 10px;
+    margin: 10px;
+    
+    border: 1px solid #ddd;
+}
+.tab2-doc .tab2-doc-title{
+	
+font-size: 12px;
+}
+.tab2-doc .col-75 {
+}
+
+.tab2-doc .col-75 img{
+	width: 40px!important;
+	height: 40px;
+	margin-top: 10px;
+}
+
+.tab2-doc .tab2-doc-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-image: url(img/tab2doc/userFile.png);
+    background-repeat: no-repeat;
+}
+.tab2-doc .tab2-doc-img.sfz{
+    background-position: -10px -10px;
+    background-size: 239px;
+}
+.tab2-doc .tab2-doc-img.hkb{
+    background-position: -10px -10px;
+    background-size: 239px;
+}
+.tab2-doc .tab2-doc-img.yhls{
+    background-position: -70px -10px;
+    background-size: 239px;
+}
+.tab2-doc .tab2-doc-img.dbp{
+    background-position: -130px -10px;
+    background-size: 239px;
+}
+.tab2-doc .tab2-doc-img.clxx{
+    background-position: -189px -10px;
+    background-size: 239px;
+}
+.tab2-doc .tab2-doc-img.other{
+    background-position: -70px -10px;
+    background-size: 239px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/center-info.css" />
+		<title></title>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="header-fix-top">
+				<div class="level">一星用户<i class="star"></i></div>
+				<div class="tools">
+					<i class="search"></i>
+					<i class="qs"></i>
+					<span>辽宁</span>
+				</div>
+			</div>
+			<div class="header-main-info" id="main">
+				<div class="main-weather">
+					<div class="area">大连</div>
+					<div class="weather">20~25℃&nbsp;晴</div>
+					<div class="qiandao">签到</div>
+				</div>
+				<div class="main-title">腾讯王卡</div>
+				<div class="main-circle">
+					<div class="tips">超出流量</div>
+					<div class="currVal">2.38<em>MB</em></div>
+					<div class="per">剩余0.0%</div>
+					<div class="cll">
+						<a href="#">充流量</a>
+					</div>
+
+				</div>
+				<div class="main-infos">
+					<div class="main-info">
+						<p>剩余话费</p>
+						<small>49.5<em>元</em></small>
+						<a href="#">交话费</a>
+					</div>
+					<div class="main-info">
+						<p>剩余语音</p>
+						<small>0<em>分钟</em></small>
+						<a href="#">换套餐</a>
+					</div>
+					<div class="main-info">
+						<p>可用积分</p>
+						<small>229<em></em></small>
+						<a href="#">积分商城</a>
+					</div>
+					<div class="main-info">
+						<p>沃信用分</p>
+						<small>500<em></em></small>
+						<a href="#">享特权</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-sub-info" id="sub">
+				<div class="sub-info">
+					<p>剩余话费</p>
+					<small>49.5<em>元</em></small>
+				</div>
+				<div class="sub-info sub-info-center">
+					<p>超出流量</p>
+					<small>229<em>MB</em></small>
+				</div>
+				<div class="sub-info">
+					<p>剩余语音</p>
+					<small>0<em>分钟</em></small>
+				</div>
+			</div>
+		</div>
+		<div class="long-body">
+			<p class="content-info">下滑操作时头部信息页面淡出，淡入简化缩略形式；上滑时恢复原始形式。
+				<br>适用于个人中心、账户管理等以统计方式展示汇总数据功能。
+			</p>
+			<p class="content-full">此区域为内容填充区域
+				<br /> (为上面演示动画铺垫)
+			</p>
+			<p class="content-full">此区域为内容填充区域<br /> (为上面演示动画铺垫)
+			</p>
+			<p class="content-full">此区域为内容填充区域</p>
+			<p class="content-full">此区域为内容填充区域</p>
+			<p class="content-full">此区域为内容填充区域</p>
+		</div>
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			window.onload = function() {
+				var opacity;
+				var main = document.getElementById("main");
+				var sub = document.getElementById("sub");
+				document.addEventListener("touchstart", function(e) {}, false);
+				document.addEventListener("touchmove", function(e) {
+					var mt = main.offsetTop - document.body.scrollTop;
+					opacity = (-(mt - 39)) / 359;
+					main.style.opacity = 1 - opacity;
+					if(opacity > 0.5) {
+						sub.style.opacity = opacity;
+					} else {
+						sub.style.opacity = opacity * opacity * opacity;
+					}
+				}, false);
+				document.addEventListener("touchend", function(e) {
+					if(opacity > 0.5) {
+						window.scrollTo(0, 359);
+						sub.style.opacity = 1
+						main.style.opacity = 0;
+					} else {
+						window.scrollTo(0, 0);
+						sub.style.opacity = 0
+						main.style.opacity = 1;
+					}
+				}, false);
+			}
+			mui.init({});
+			mui.plusReady(function () {
+				
+				plus.webview.currentWebview().setStyle({scrollIndicator:'none'});
+				
+			    plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+							var w = plus.webview.currentWebview();
+							plus.screen.lockOrientation("portrait-primary");
+							plus.webview.close(w);
+					}
+				});
+			})
+			
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/center.css" />
+		<
+	</head>
+
+	<body>
+		<div id="tab-4">
+			<div class="head" id="header">
+				<img id="user_pic" src="../css/img/my_user_pic@2x.png" class="user_pic" />
+				<span id="user_name" class="user_name">王先生</span>
+				<div class="mui-row" id="user_data">
+					<div class="mui-col-sm-4 mui-col-xs-4">
+						<span>5042.00</span>
+						<i>可用余额</i>
+						<a href="javascript:void(0);">查看</a>
+					</div>
+					<div class="mui-col-sm-4  mui-col-xs-4">
+						<span>5042.00</span>
+						<i>可用余额</i>
+						<a href="javascript:void(0);">查看</a>
+					</div>
+					<div class="mui-col-sm-4  mui-col-xs-4">
+						<span>5042.00</span>
+						<i>可用余额</i>
+						<a href="javascript:void(0);">查看</a>
+					</div>
+				</div>
+			</div>
+			<div id="myNav">
+				<div class="mui-row  ">
+					<div class="mui-col-sm-3  mui-col-xs-3" data-ripple="ripple">
+						<a href="javascript:void(0);" class="btn" >
+							<i>
+									<img  src="../css/img/my1@2x.png" width="30%" />
+								</i>
+							<span>产品</span>
+						</a>
+					</div>
+					<div class="mui-col-sm-3  mui-col-xs-3" data-ripple="ripple">
+						<a href="javascript:void(0);" class="btn" >
+							<i>
+									<img  src="../css/img/my2@2x.png" width="30%" />
+								</i>
+							<span>收益</span>
+						</a>
+					</div>
+					<div class="mui-col-sm-3  mui-col-xs-3" data-ripple="ripple">
+						<a href="javascript:void(0);" class="btn">
+							<i>
+									<img  src="../css/img/my3@2x.png" width="30%" />
+								</i>
+							<span>消息</span>
+						</a>
+					</div>
+					<div class="mui-col-sm-3  mui-col-xs-3" data-ripple="ripple">
+						<a href="javascript:void(0);" class="btn">
+							<i>
+									<img  src="../css/img/my4@2x.png" width="30%" />
+								</i>
+							<span>交易</span>
+						</a>
+					</div>
+					<div class="mui-col-sm-3  mui-col-xs-3" data-ripple="ripple">
+						<a href="javascript:void(0);" class="btn">
+							<i>
+									<img  src="../css/img/my5@2x.png" width="30%" />
+								</i>
+							<span>余额</span>
+						</a>
+					</div>
+					<div class="mui-col-sm-3  mui-col-xs-3" data-ripple="ripple">
+						<a href="javascript:void(0);" class="btn">
+							<i>
+									<img  src="../css/img/my6@2x.png" width="30%" />
+								</i>
+							<span>查询</span>
+						</a>
+					</div>
+					<div class="mui-col-sm-3  mui-col-xs-3" data-ripple="ripple">
+						<a href="javascript:void(0);" class="btn">
+							<i>
+									<img  src="../css/img/my7@2x.png" width="30%" />
+								</i>
+							<span>行情</span>
+						</a>
+					</div>
+					<div class="mui-col-sm-3  mui-col-xs-3" data-ripple="ripple">
+						<a href="javascript:void(0);" class="btn">
+							<i>
+									<img  src="../css/img/my8@2x.png" width="30%" />
+								</i>
+							<span>设置</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="myMain">
+				<ul class="mui-table-view" >
+					<li class="mui-table-view-cell" data-ripple="ripple">
+						<a href="javascript:void(0);" class="mui-navigate-right" >
+
+							<img class="mui-media-object mui-pull-left" src="../css/img/my_opt1@2x.png">
+							<div class="mui-media-body">我的融资</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell" data-ripple="ripple">
+						<a href="javascript:void(0);" class="mui-navigate-right">
+
+							<img class="mui-media-object mui-pull-left" src="../css/img/my_opt2@2x.png">
+							<div class="mui-media-body">业务申请</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell" data-ripple="ripple">
+						<a href="javascript:void(0);" class="mui-navigate-right">
+
+							<img class="mui-media-object mui-pull-left" src="../css/img/my_opt3@2x.png">
+							<div class="mui-media-body">审批进度</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell" data-ripple="ripple">
+						<a href="javascript:void(0);" class="mui-navigate-right">
+
+							<img class="mui-media-object mui-pull-left" src="../css/img/my_opt4@2x.png">
+							<div class="mui-media-body">在线业务</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="myAct">
+				<div class="title">
+					<img src="../css/img/small_b@2x.png" alt="" />
+					<span>活动专区</span>
+				</div>
+				<div class="mui-row ">
+					<div class="mui-col-sm-6  mui-col-xs-6" data-ripple="ripple">
+						<a href="javascript:void(0);"><img src="../css/img/my_act1@2x.png" width="100%" /></a>
+					</div>
+					<div class="mui-col-sm-6  mui-col-xs-6" data-ripple="ripple">
+						<a href="javascript:void(0);"><img src="../css/img/my_act2@2x.png" width="100%" /></a>
+					</div>
+					<div class="mui-col-sm-6  mui-col-xs-6" data-ripple="ripple">
+						<a href="javascript:void(0);"><img src="../css/img/my_act3@2x.png" width="100%" /></a>
+					</div>
+					<div class="mui-col-sm-6  mui-col-xs-6" data-ripple="ripple">
+						<a href="javascript:void(0);"><img src="../css/img/my_act4@2x.png" width="100%" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/mui.js"></script>
+	<script type="text/javascript" src="../js/ripple.js" ></script>
+	<script>
+		mui.init({
+			swipeBack: true, //启用右滑关闭功能
+			gestureConfig: {
+				tap: true, //默认为true
+				doubletap: true, //默认为false
+				longtap: true, //默认为false
+				swipe: true, //默认为true
+				drag: true, //默认为true
+				hold: false, //默认为false，不监听
+				release: false //默认为false，不监听
+			}
+		});
+		mui.plusReady(function() {
+			new Ripple({
+				opacity: 0.6, //水波纹透明度
+				speed: 0.5, //水波纹扩散速度
+				bgColor: "#ddd", //水波纹颜色
+				cursor: false //是否显示手型指针
+			})
+
+			document.addEventListener("swipeup", function(e) {
+				mui("#tab-4")[0].setAttribute("class", "ontop");
+			}, false);
+			document.addEventListener("swipedown", function(e) {
+				mui("#tab-4")[0].setAttribute("class", "");
+			}, false);
+
+			//			var pre = 0;
+			//			var headLeft = mui(".head .user_pic")[0].offsetLeft;
+			//			var nameWidth = mui(".head .user_name")[0].offsetWidth;
+			//			var animateHeader = function(pre) {
+			//				mui(".head")[0].style.height = (248 - (133 * pre)) + "px";
+			//				mui(".head .user_pic")[0].style.width = (106 - 56 * pre) + "px";
+			//				mui(".head .user_pic")[0].style.left = (headLeft - (headLeft - 10) * pre) + "px";
+			//				mui(".head .user_name")[0].style.width = (nameWidth - (nameWidth - 72) * pre) + "px";
+			//				mui(".head .user_name")[0].style.top = (125 - 44 * pre) + "px";
+			//				mui("#user_data")[0].style.top = (154 - 120 * pre) + "px";
+			//				mui("#user_data")[0].style.left = (70 * pre) + "px";
+			//			}
+			var hh = 0;
+			var flag = false;
+			document.addEventListener("dragstart", function(e) {
+				hh = e.detail.touches[0].pageY;
+			}, false);
+			document.addEventListener("drag", function(e) {
+				if((e.detail.touches[0].pageY - hh) > 0) {
+					flag = false;
+					mui("#tab-4")[0].setAttribute("class", "");
+				} else {
+					mui("#tab-4")[0].setAttribute("class", "ontop");
+					flag = true;
+				}
+				
+			}, false);
+			document.addEventListener("dragend", function(e) {
+				if((e.detail.touches[0].pageY - hh) > 0) {
+					mui("#tab-4")[0].setAttribute("class", "");
+				} else {
+					mui("#tab-4")[0].setAttribute("class", "ontop");
+				}
+				if(mui(document.body)[0].scrollTop > 90) {
+					mui("#tab-4")[0].setAttribute("class", "ontop");
+				}
+			}, false);
+
+//var startPH;
+//	var flag = false;
+//	pageContent.addEventListener("touchstart", function(e) {
+//		startPH = e.touches[0].pageY;
+//	}, false);
+//	pageContent.addEventListener("touchmove", function(e) {
+//		if((e.touches[0].pageY - startPH) > 0) {
+//			flag = false;
+//			$$("#tab-4").removeClass("ontop");
+//		} else {
+//			$$("#tab-4").addClass("ontop");
+//			flag = true;
+//		}
+//	}, false);
+//	pageContent.addEventListener("touchend", function(e) {
+//		if(flag) {
+//			$$("#tab-4").addClass("ontop");
+//		} else {
+//			$$("#tab-4").removeClass("ontop");
+//		}
+//	}, false);
+
+
+
+		});
+	</script>
+
+</html>

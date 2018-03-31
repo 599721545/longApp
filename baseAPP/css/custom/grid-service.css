@@ -1,0 +1,72 @@
+/*------grid-service.html样式开始-----*/
+
+.yewuIndex .mui-col-xs-6 {
+	transform: scale(1.5) translate(150px);
+	transition: transform .5s, opacity 1s;
+	opacity: 0;
+}
+
+
+
+.yewuIndex .mui-col-xs-6 {
+	padding-top: 40px;
+}
+
+.yewuIndex .mui-col-xs-6 .indexImg {
+	width: 60px;
+	height: 60px;
+	background-size: 30px 30px;
+	margin: 0 auto;
+	background-position: center;
+	margin-top: -20px;
+}
+
+.yewuIndex .mui-col-xs-6 .item-title {}
+
+.yewuIndex .mui-col-xs-6:nth-child(1) .indexImg {
+	background-image: url(img/yewu1.png);
+	background-color: #f0fefe;
+	border-radius: 30px;
+}
+
+.yewuIndex .mui-col-xs-6:nth-child(2) .indexImg {
+	background-image: url(img/yewu2.png);
+	background-color: #fdf6f7;
+	border-radius: 30px;
+}
+
+.yewuIndex .mui-col-xs-6:nth-child(3) .indexImg {
+	background-image: url(img/yewu3.png);
+	background-color: #f8f5fe;
+	border-radius: 30px;
+}
+
+.yewuIndex .mui-col-xs-6:nth-child(4) .indexImg {
+	background-image: url(img/yewu4.png);
+	background-color: #eefaff;
+	border-radius: 30px;
+}
+
+.yewuIndex .mui-col-xs-6:nth-child(5) .indexImg {
+	background-image: url(img/yewu5.png);
+	background-color: #f3f9f3;
+	border-radius: 30px;
+}
+
+.yewuIndex .mui-col-xs-6:nth-child(6) .indexImg {
+	background-image: url(img/yewu6.png);
+	background-color: #fff5eb;
+	border-radius: 30px;
+}
+
+.yewuIndex .mui-col-xs-6:active {
+	background: #19b2f1;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+}
+
+.indexNewNav .mui-col-xs-6 span em {
+	font-family: "微软雅黑";
+	font-style: normal;
+	font-size: 20px;
+	color: #ee0000;
+}

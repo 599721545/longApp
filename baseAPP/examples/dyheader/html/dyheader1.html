@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/list.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-card">
+				<div class="mui-card-content" style="padding:380px 15px 480px; color:#999;margin-top:10px;text-align: center;">
+					表头渐变效果
+				</br>通过上下滚动触发
+				</div>
+			</div>
+			
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../../../js/base/common/dyheader.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/base/resolve/resolve-js.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+
+			mui.plusReady(function() {
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+
+			});
+
+			function back(id) {
+				var w = plus.webview.getWebviewById(id);
+				w.close();
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<title></title>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script src="../js/push.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+		<style type="text/css">
+			body {
+				height: 0;
+			}
+			p {
+				font-size: 12px;
+			}
+		</style>
+	</head>
+
+	<body>
+			<ul id="dlist" class="dlist">
+				<li class="ditem" onclick="getPushInfo()">获取客户端推送标识</li>
+				<li class="ditem" onclick="createLocalPushMsg()">创建本地消息</li>
+				<li class="ditem" onclick="clearAllPush()">清空推送消息</li>
+			</ul>
+		<div id="output" style="height: 100px;">
+			<p>Push模块管理推送消息功能，可以实现本地消息推送，通过plus.push可获取推送消息管理对象。</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/immersed.js"></script>
+
+</html>

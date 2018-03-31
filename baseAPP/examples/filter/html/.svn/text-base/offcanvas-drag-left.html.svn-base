@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../css/mui/mui.min.css">
+		<link rel="stylesheet" href="../css/filter-plug.css">
+	</head>
+	<body>
+		<!--侧滑菜单容器-->
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<!--菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-right">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="mui-content">
+							
+						</div>
+					</div>
+				</div>
+				<div class="bottom-btn-div">
+					<div id="offCanvasReset" class="bottom-btn bottom-btn-reset">重置</div>
+					<div id="offCanvasSubmit" class="bottom-btn bottom-btn-submit">确定</div>
+				</div>
+			</aside>
+			<div class="mui-inner-wrap">
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="mui-content-padded">
+							<!--自定义代码位置start-->
+							<p style="padding: 5px 20px;margin-bottom: 5px;">
+								<button id="offCanvasShow" type="button" class="mui-btn mui-btn-primary mui-btn-block" style="padding: 5px;">
+									显示侧滑菜单
+								</button>
+								<p id="arrayValue"></p>
+							</p>
+							<!--自定义代码位置end-->
+						</div>
+					</div>
+				</div>
+				<!-- off-canvas backdrop -->
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/filter-plug.js"></script>
+		<script>
+			filterPlug.init();
+			ajax({
+				url: "../data/data.json", // 请求地址 
+				type: "GET", // 请求方式
+				dataType: "json",
+				async: false,
+				success: function(response) {
+					var data = JSON.parse(response);
+					filterPlug.create(data,function(array){
+						console.log("返回选中的筛选条件");
+						console.log(array);
+						document.getElementById('arrayValue').innerHTML = JSON.stringify(array, null, 4);
+					});
+					document.getElementById('offCanvasShow').addEventListener('tap', function() {
+						filterPlug.open();
+					});
+				},
+				fail: function(status) {
+					// 此处放失败后执行的代码
+				}
+			});	
+			
+		</script>
+	</body>
+
+</html>

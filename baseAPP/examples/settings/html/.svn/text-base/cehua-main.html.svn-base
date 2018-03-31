@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>cehua-main</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/list.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-card">
+				<div class="mui-card-content" style=" color:#999;padding:80px 15px;margin-top:10px;text-align: center;">
+					右滑拉出侧滑菜单
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../../../js/base/common/dyheader.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/base/resolve/resolve-js.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init({});
+			var aniShow = "pop-in";
+					var menu = null,
+						showMenu = false;
+					var isInTransition = false;
+					var _self;
+					var main = null;
+					var count = 0;
+					//初始化，并预加载webview模式的选项卡			
+					function preload() {
+
+						var menu_style = {
+							left: "-70%",
+							width: '70%',
+							popGesture: "none",
+							render: "always"
+						};
+
+						if(mui.os.ios) {
+							menu_style.zindex = -1;
+						}
+
+						//处理侧滑导航，为了避免和子页面初始化等竞争资源，延迟加载侧滑页面；
+						menu = mui.openWindow({
+							id: 'cehua',
+							url: 'cehua.html',
+							styles: menu_style,
+							show: {
+								aniShow: 'none'
+							},
+							waiting: {
+								autoShow: false
+							}
+						});
+					}
+			mui.plusReady(function() {
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						var wvs = plus.webview.getDisplayWebview();
+						
+						for(var i = 0; i < wvs.length; i++) {
+									if(wvs[i].id == "cehua") {
+											closeMenu();
+										break;
+									} 
+								}
+						w.close();
+					}
+				});
+						
+						preload();
+
+						main = plus.webview.getWebviewById("main");;
+						_self = plus.webview.currentWebview();
+
+						//启用侧滑拖拽操作，延时的原因是menu页是延时创建的，所以这里需要相应延时
+						setTimeout(function() {
+							_self.drag({
+								direction: "right",
+								moveMode: "followFinger"
+							}, {
+								view: menu,
+								moveMode: "follow"
+							}, function(e) {
+								var wvs = plus.webview.getDisplayWebview();
+								for(var i = 0; i < wvs.length; i++) {
+									if(wvs[i].id == "index-menu") {
+											closeMenu();
+										break;
+									} 
+								}
+
+							});
+
+						}, 350);
+					});
+
+					
+					/**
+					 * 显示侧滑菜单
+					 */
+					function openMenu() {
+						plus.webview.startAnimation({
+								'view': _self,
+								'styles': {
+									'fromLeft': '0',
+									'toLeft': "70%"
+								},
+								'action': 'show'
+							}, {
+								'view': menu,
+								'styles': {
+									'fromLeft': "-70%",
+									'toLeft': '0'
+								},
+								'action': 'show'
+							},
+							function(e) {
+								//console.log(JSON.stringify(e));
+								if(e.id == menu.id) { //侧滑菜单打开
+										closeMenu();
+								}
+							}.bind(this)
+						)
+					};
+					/**
+					 * 关闭菜单
+					 */
+					function closeMenu() {
+						plus.webview.startAnimation({
+								'view': _self,
+								'styles': {
+									'fromLeft': '70%',
+									'toLeft': "0"
+								},
+								'action': 'show'
+							}, {
+								'view': menu,
+								'styles': {
+									'fromLeft': "0",
+									'toLeft': '-70%'
+								},
+								'action': 'show'
+							},
+							function(e) {
+								console.log(JSON.stringify(e));
+								if(e.id == _self.id) {
+
+								}
+							}.bind(this)
+						)
+					};
+			
+		</script>
+	</body>
+
+</html>

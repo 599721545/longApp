@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/my-app.css" />
+
+		<style>
+			.mui-ellipsis-2 {
+				line-height: 20px;
+				font-size: 16px;
+				font-weight: 400;
+			}
+			
+			.yewuIndex .mui-col-xs-6 {
+				transform: scale(1.5) translate(150px);
+				transition: transform .5s, opacity 1s;
+				opacity: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">审批</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-row indexNewNav yewuIndex">
+				<div class="mui-col-xs-6 active">
+					<a id="tab2_credit_list" href="tab2/tab2_credit_list.html">
+						<div class="item-content">
+							<div class="indexImg"></div>
+							<div class="item-inner">
+								<div class="item-title">企业贷款审批 </div>
+								<span>当前有 <em> 5</em> 条审批信息</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mui-col-xs-6">
+					<a id="tab2_credit_list2" href="tab2/tab2_credit_list.html">
+						<div class="item-content">
+							<div class="indexImg"></div>
+							<div class="item-inner">
+								<div class="item-title">个人贷款审批</div>
+								<span>当前有 <em> 5</em> 条审批信息</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mui-col-xs-6">
+					<a id="tab2_credit_list3" href="tab2/tab2_credit_list.html">
+						<div class="item-content">
+							<div class="indexImg"></div>
+							<div class="item-inner">
+								<div class="item-title">保理审批</div>
+								<span>当前有 <em> 5</em> 条审批信息</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mui-col-xs-6">
+					<a id="tab2_credit_list4" href="tab2/tab2_credit_list.html">
+						<div class="item-content">
+							<div class="indexImg"></div>
+							<div class="item-inner">
+								<div class="item-title">个人贷款转让审批</div>
+								<span>当前有 <em> 5</em> 条审批信息</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mui-col-xs-6">
+					<a id="tab2_credit_list5" href="tab2/tab2_credit_list.html">
+						<div class="item-content">
+							<div class="indexImg"></div>
+							<div class="item-inner">
+								<div class="item-title">企业贷款转让审批</div>
+								<span>当前有 <em> 5</em> 条审批信息</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mui-col-xs-6">
+					<a id="tab2_credit_list6" href="tab2/tab2_credit_list.html">
+						<div class="item-content">
+							<div class="indexImg"></div>
+							<div class="item-inner">
+								<div class="item-title">个人授信审批</div>
+								<span>当前有 <em> 5</em> 条审批信息</span>
+							</div>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</body>
+	<script src="../js/mui.min.js" type="text/javascript"></script>
+	<script src="../js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		mui.init({
+			swipeBack: false //启用右滑关闭功能
+		});
+		var aniShow = "pop-in";
+		mui.plusReady(function() {
+			plus.webview.currentWebview().setStyle({scrollIndicator:'none'});
+			//console.log('HardwareAccelerat:============slider-default.html==='+plus.webview.defaultHardwareAccelerated());
+			$(".yewuIndex").children().each(function(i, item) {
+				var time = 100 * i;
+				setTimeout(function() {
+					$(item).css({
+						"transform": "scale(1) translate(0px)",
+						"opacity": "1"
+					});
+				}, time);
+			});
+
+		});
+
+		plus.key.addEventListener('keydown', function(e) {
+			console.log(e.keyCode);
+			if(e.keyCode == 4) {
+				var w = plus.webview.currentWebview();
+				plus.screen.lockOrientation("portrait-primary");
+				plus.webview.close(w);
+			}
+		});
+
+		mui('.mui-content').on('tap', '.mui-col-xs-6', function() {
+			var w = plus.webview.create('tab2/tab2_credit_list.html', 'tab2_credit_list');
+			plus.webview.show(w, 'zoom-fade-out', 600, {
+				acceleration: 'auto'
+			});
+		});
+
+		//添加自定义事件监听
+		window.addEventListener('startAnimation', function(event) {
+			//获得事件参数
+			//var id = event.detail.id;
+			$(".yewuIndex").children().each(function(i, item) {
+				var time = 100 * i;
+				setTimeout(function() {
+					$(item).css({
+						"transform": "scale(1) translate(0px)",
+						"opacity": "1"
+					});
+				}, time);
+			});
+		});
+		//添加自定义事件监听
+		window.addEventListener('endAnimation', function(event) {
+			//获得事件参数
+			//var id = event.detail.id;
+			$(".yewuIndex").children().css({
+				"transform": "scale(1.8) translate(100px)",
+				"opacity": "0"
+			});
+		});
+
+		document.addEventListener("swipeleft", function() {
+			console.log("你正在向左滑动");
+		});
+		document.addEventListener("swiperight", function() {
+			console.log("你正在向右滑动");
+		});
+		document.addEventListener("swipeup", function() {
+			console.log("你正在向上滑动");
+		});
+		document.addEventListener("swipedown", function() {
+			console.log("你正在向下滑动");
+		});
+	</script>
+
+</html>

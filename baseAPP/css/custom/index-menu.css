@@ -1,0 +1,148 @@
+body,
+.mui-content {
+	background-color: #fff;
+	color: #333;
+}
+
+.title {
+	margin: 35px 15px 10px;
+}
+
+.title+.content {
+	margin: 10px 15px 35px;
+	color: #bbb;
+	text-indent: 1em;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.mui-table-view {
+	margin-bottom: 35px;
+}
+
+.mui-table-view-cell {
+	background: #fff;
+}
+
+.mui-table-view-inverted .mui-table-view-cell:after {
+	height: 0!important;
+}
+
+.mui-table-view-inverted:after {
+	height: 0;
+}
+
+.mui-navigate-right:after,
+.mui-push-right:after {
+	display: none;
+}
+
+a.mui-navigate-right {
+	color: #333!important;
+	line-height: 24px;
+	font-size: 15px;
+}
+
+.mui-active {
+	background: none!important;
+}
+
+.content {
+	padding: 50px 15px;
+	background: url(../../css/custom/img/bg00.png);
+	background-size: cover;
+}
+
+.mui-table-view {
+	margin-top: 15px;
+}
+
+.content .photo {
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	border: #fff solid 3px;
+	overflow: hidden;
+	float: left;
+}
+
+.content .name {
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	padding-left: 15px;
+	font-size: 24px;
+}
+
+.content:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.ico {
+	float: left;
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin-right: 12px;
+}
+
+.icon1 {
+	background-image: url(../../css/custom/img/sideIcon01.png);
+	background-size: cover;
+}
+
+.icon2 {
+	background-image: url(../../css/custom/img/sideIcon02.png);
+	background-size: cover;
+}
+
+.icon3 {
+	background-image: url(../../css/custom/img/sideIcon03.png);
+	background-size: cover;
+}
+
+.icon4 {
+	background-image: url(../../css/custom/img/sideIcon04.png);
+	background-size: cover;
+}
+
+.icon5 {
+	background-image: url(../../css/custom/img/sideIcon05.png);
+	background-size: cover;
+}
+
+.icon6 {
+	background-image: url(../../css/custom/img/sideIcon06.png);
+	background-size: cover;
+}
+
+.btmOption {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	font-size: 15px;
+}
+
+.btmOption a {
+	color: #333
+}
+
+.btmOption .opt01 {
+	float: left;
+	line-height: 20px;
+}
+
+.btmOption .opt01 .setting {
+	display: block;
+	float: left;
+	margin-right: 5px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../../css/custom/img/sideIconBtm01.png);
+	background-size: cover;
+}
+.mui-table-view-cell>a:not(.mui-btn){
+	    margin: -8px -15px;
+}

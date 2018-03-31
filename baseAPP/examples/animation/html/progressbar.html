@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>进度条</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/my-app.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/progress.css"/>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-demo-container">
+				<div id="demo1" class="mui-text-center">
+					<h5>动态设置进度条进度</h5>
+					<p class="mui-progressbar mui-progressbar-in" data-progress="20"><span style="background-color: #1EACF0;"></span></p>
+					<ul id="progressbarBtn1" class="mui-pagination">
+						<li><a href="javascript:;" data-progress="10"><span>10%</span></a></li>
+						<li><a href="javascript:;" data-progress="30"><span>30%</span></a></li>
+						<li><a href="javascript:;" data-progress="50"><span>50%</span></a></li>
+						<li><a href="javascript:;" data-progress="100"><span>100%</span></a></li>
+					</ul>
+				</div>
+				<div id="demo2">
+					<h5>动态创建内联进度条及销毁</h5>
+					<p style="height: 2px;"></p>
+					<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined mui-btn-block">开始加载</button>
+				</div>
+			</div>
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script>
+			var progressbar1 = mui('#demo1');
+			mui(progressbar1).progressbar().setProgress(10)
+			progressbar1.on('tap', 'a', function() {
+				mui(progressbar1).progressbar().setProgress(this.getAttribute('data-progress'));
+			});
+			/**
+			 * 通过随机数模拟业务进度，真实业务中需根据实际进度修改
+			 * @param {Object} container
+			 * @param {Object} progress
+			 */
+			function simulateLoading(container, progress) {
+				if (typeof container === 'number') {
+					progress = container;
+					container = 'body';
+				}
+				setTimeout(function() {
+					progress += Math.random() * 20;
+					mui(container).progressbar().setProgress(progress);
+					if (progress < 100) {
+						simulateLoading(container, progress);
+					} else {
+						mui(container).progressbar().hide();
+					}
+				}, Math.random() * 200 + 200);
+			}
+			//动态创建内联进度条
+			mui("#demo2").on('tap', '.mui-btn', function() {
+				var container = mui("#demo2 p");
+				if (container.progressbar({
+						progress: 0
+					}).show()) {
+					simulateLoading(container, 0);
+				}
+			});
+			
+			mui.init({});
+			mui.plusReady(function () {
+				plus.webview.currentWebview().setStyle({scrollIndicator:'none'});
+			    	plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>手势锁屏示例</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/list.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/custom/my-app.css"/>
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">API库</h1>
+		</header>
+
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" id="device" rel="device-info.html">手机信息</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" id="geolocation" rel="geolocation.html">定位</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" id="push" rel="message-push.html">消息推送</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" id="record" rel="record.html">录音/播放</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" id="scan" rel="barcode_scan2.html">二维码扫描/摄像头</a>
+				</li>
+
+			</ul>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.locker.js"></script>
+		<script src="../../../js/base/common/dyheader.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/base/resolve/resolve-js.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init({
+				swipeBack: false //启用右滑关闭功能
+			});
+			mui.plusReady(function() {
+				mui('.mui-table-view').on("tap", "a", function() {
+					var id = this.id;
+					var rel = this.rel;
+					dyheader.init(rel, id);
+				});
+
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

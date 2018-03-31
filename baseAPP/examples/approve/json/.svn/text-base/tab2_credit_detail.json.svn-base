@@ -1,0 +1,106 @@
+{
+    "cif_info": {
+        "title": "corp"
+    },
+    "key_eight": {
+        "evalPubNo": "100001170810500085",
+        "title": "评级结果",
+        "url": "EvalPublicAction_getById.action?evalPubNo=100001170810500085&query=query&view=view"
+    },
+    "key_five": {
+        "appNo": "100001170810100187",
+        "cifName": "甘肃肃瑞建材有限公司",
+        "cifNo": "1010000329",
+        "custType": "A",
+        "dlModelVer": "A1400656626409",
+        "evalOccType": "1",
+        "evalPubNo": "100001170810500085",
+        "query": "query",
+        "rptDate": "20170810",
+        "title": "定量评分",
+        "tradeNo": "null",
+        "url": "EvalPublicActionEvalDlModelMark.action?evalPubNo=100001170810500085&cifNo=1010000329&evalOccType=1&cifName=甘肃肃瑞建材有限公司&custType=A&rptDate=20170810&modelVer=A1400656626409&query=query&view=view&tradeNo=null100001170810100187",
+        "view": "view"
+    },
+    "key_four": {
+        "serno": "100001170810100187",
+        "title": "风险拦截信息",
+        "url": "RewPvRiskResultAction_findByPageView.action?serno=100001170810100187"
+    },
+    "key_info": {
+        "info": "需要选择下一个审批节点",
+        "name": "法务总监",
+        "state": "0"
+    },
+    "key_nine": {
+        "executionId": "process_201742116925641.9139",
+        "title": "审批详情",
+        "url": "WkfTaskAction_findIdeaList.action?executionId=process_201742116925641.9139"
+    },
+    "key_one": {
+        "appForm": "iqp1851",
+        "appNo": "100001170810100187",
+        "appRate": "0.01",
+        "appTable": "IqpLoan",
+        "applyAmt": "1,200,000.00",
+        "cifName": "甘肃肃瑞建材有限公司",
+        "cifNo": "1010000329",
+        "mangBrNo": "100001",
+        "prdName": "不动产抵押",
+        "prdNo": "2358",
+        "prdType": "企业贷款",
+        "prdUserdfType": "流动资金贷款",
+        "repayType": "按期还息，到期还本",
+        "title": "贷款申请信息",
+        "totalDays": "365",
+        "url": "IqpLoanAction_getPersTransferById.action?appNo=100001170810100187&appForm=iqp1851&appTable=IqpLoan&query=query",
+        "vouType": "质押"
+    },
+    "key_seven": {
+        "cifNo": "1010000329",
+        "cifType": "1",
+        "custType": "A",
+        "evalPubNo": "100001170810500085",
+        "title": "综合评分",
+        "url": "EvalGradeScoreValActionEvalzh.action?evalPubNo=100001170810500085&cifType=1&custType=A&cifNo=1010000329&adjustModel=null&useModel=B1400737065539@A1400656626409&query=query",
+        "useModel": "B1400737065539@A1400656626409"
+    },
+    "key_six": {
+        "custType": "A",
+        "evalPubNo": "100001170810500085",
+        "modelVer": "B1400737065539",
+        "title": "定性评分",
+        "url": "EvalPublicActionEvalDxModelMark.action?evalPubNo=100001170810500085&custType=A&modelVer=B1400737065539&useModel=B1400737065539@A1400656626409&query=query",
+        "useModel": "B1400737065539@A1400656626409"
+    },
+    "key_ten": {
+        "appNo": "100001170810100187",
+        "title": "贷款审批",
+        "url": "AppForIqpLoanCorpAction_getCorpByIdForFst.action?appNo=100001170810100187"
+    },
+    "key_three": {
+        "authorize": "VIEW",
+        "cifNo": "1010000329",
+        "cifType": "1",
+        "docScene": "02",
+        "relNo": "100001170810100187",
+        "title": "要件查看",
+        "url": "DocManageAction_toDocManage.action?docScene=02&relNo=100001170810100187&cifNo=1010000329&cifType=1&authorize=VIEW&prdNo=2358"
+    },
+    "key_two": {
+        "appNo": "100001170810100187",
+        "bizType": "01",
+        "cifNo": "1010000329",
+        "title": "担保信息",
+        "url": "IqpGrtActionGetGrtByAppNoView.action?appNo=100001170810100187&cifNo=1010000329&bizType=01&query=query"
+    },
+    "key_zero": {
+        "info": "同意，否决，退回，发回重审",
+        "state_zero": "2"
+    },
+    "resultCode": "0"
+}
+
+
+
+

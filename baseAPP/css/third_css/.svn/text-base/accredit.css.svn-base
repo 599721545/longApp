@@ -1,0 +1,133 @@
+*{
+	-webkit-font-smoothing:antialiased;
+}
+.accredit-head{
+    font-size: 0.8rem !important;
+    color: #000 !important;
+    padding-bottom:5px;
+}
+.weui_panel_hd{
+	padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    color: #000;
+    border-bottom: 2px solid #e3e3e3;
+}
+.weui_cell{
+	padding:10px 0;
+	border-top:none !important;
+}
+.panel-col-3{
+	width:32.5% !important;
+	padding:0 !important;
+	text-align:center;
+}
+.panel-col-2{
+	width:49%;
+	padding:0 !important;
+}
+.panel-col-2 div{
+	margin:0 auto;
+	margin: 0 10px 0 10px;
+	text-align:left;
+}
+.middle{
+	width: 90%;
+	margin:0 auto;
+	background:#C4ECF6 !important;
+	font-size:0.6rem;
+	text-align:left;
+}
+.middle p{
+	width:auto;
+	text-align:left;
+}
+.middle div{
+	background:#C4ECF6 !important;
+}
+.middle .weui_cell::before{
+	border-top:none !important;
+}
+.inputS input{
+	border: 1px solid lightblue;
+	border-radius:15px;
+	text-align:center;
+}
+.minFont .weui_label{
+	font-size: 0.6rem;
+    color: #C5C5C5;
+    padding: 0px;
+}
+.auto_label{
+	background: #ffffff;
+}
+.weui_panel_hd{
+	background: #ffffff;
+}
+.auto_label label{
+	width:auto;
+}
+.bg_white{
+	background: #ffffff !important;
+}
+.bg_white div{
+	background: #ffffff;
+}
+.weui_cell_hd{
+	padding-left:0 !important;
+	margin-left:0 !important;
+}
+.centerCon{
+	padding-bottom:5px;
+}
+.centerCon label{
+	width:100% !important;
+	text-align:center;
+	color:black;
+}
+.centerCon .weui_cell_hd{
+	width:100%;
+}
+#img1{
+	width:100%;
+	height:100px;
+	background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494940953692&di=4ea78f1ebd7878c5358c9d83c9d71945&imgtype=0&src=http%3A%2F%2Fimg.25pp.com%2Fuploadfile%2Fapp%2Ficon%2F20160619%2F1466307570927367.jpg");
+    background-size:60% 80%;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+#img1>div{
+	display:none;
+}
+#img2{
+	width:100%;
+	height:100px;
+	background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494940953692&di=4ea78f1ebd7878c5358c9d83c9d71945&imgtype=0&src=http%3A%2F%2Fimg.25pp.com%2Fuploadfile%2Fapp%2Ficon%2F20160619%2F1466307570927367.jpg");
+    background-size:60% 80%;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+#img2>div{
+	display:none;
+}
+#img3{
+	width:100%;
+	height:100px;
+	background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494940953692&di=4ea78f1ebd7878c5358c9d83c9d71945&imgtype=0&src=http%3A%2F%2Fimg.25pp.com%2Fuploadfile%2Fapp%2Ficon%2F20160619%2F1466307570927367.jpg");
+    background-size:60% 80%;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+#img3>div{
+	display:none;
+}
+#apply{
+	background:#3AD2F9;
+	width:100%;
+	position:fixed;
+	bottom:0;
+	left:0;
+	color:#ffffff;	
+}
+#heigher{
+	margin-bottom:34px;
+}

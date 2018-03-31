@@ -1,0 +1,161 @@
+/*-----login.html样式开始-----*/
+
+.mui-content1 p {
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	margin: 0;
+}
+
+#login-form label {
+	position: relative;
+	top: 6px;
+	margin-left: 10px;
+	display: none;
+}
+
+#login {
+	font-size: 14px;
+}
+
+.login {
+	background: #fff;
+}
+
+#login-form .item-input input {
+	width: calc(100% - 20px);
+	border-radius: 4px;
+	background: none;
+	border: none;
+	border: 1px solid #ddd;
+	text-align: center;
+	padding: 10px;
+}
+
+#login-form .item-input-field:after,
+.input-field:after {
+	height: 0;
+}
+
+.login .row {
+	margin-bottom: 15px;
+}
+
+.login .mui-content1 {
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 100%;
+	background-size: cover;
+}
+
+.login .mui-content1 .logo {
+	margin-left: auto;
+	padding-top: 60px;
+	margin-right: auto;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.login .mui-content1 .mui-btn-blue,
+.login .mui-btn-primary,
+input[type=submit] {
+	color: #fff;
+	border: 1px solid #3c3aef;
+	background-color: #3c3aef;
+	text-align: center;
+}
+
+.login .mui-input-group {
+	margin: 40px;
+	margin-bottom: 15px;
+	background-color: rgba(255, 255, 255, 0.08);
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.login .mui-input-group label {
+	width: 22%;
+}
+
+.login .mui-content-padded {
+	margin: 30px 40px;
+	margin-top: 15px;
+}
+
+.login .mui-btn {
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 22px;
+}
+
+.login .mui-input-group:before {
+	height: 0;
+}
+
+.login .mui-input-group:after {
+	height: 0;
+}
+
+.login .mui-input-group .mui-input-row:after {
+	left: 0;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.login .mui-input-group .mui-input-row.mima:after {
+	height: 0;
+}
+
+.login .mui-btn-blue.mui-active:enabled,
+.login .mui-btn-blue:enabled:active,
+.login .mui-btn-primary.mui-active:enabled,
+.login .mui-btn-primary:enabled:active,
+.login input[type=submit].mui-active:enabled,
+.login input[type=submit]:enabled:active {
+	background: #ffc600;
+}
+
+.login .mui-input-row label img {
+	height: 24px;
+	margin-top: 1px;
+}
+
+.login :-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #fff;
+	opacity: 0.3;
+}
+
+.login ::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #fff;
+	opacity: 0.3;
+}
+
+.login input:-ms-input-placeholder {
+	color: #fff;
+	opacity: 0.3;
+}
+
+.login input::-webkit-input-placeholder {
+	color: #fff;
+	opacity: 0.3;
+}
+
+.login .mui-input-group .mui-input-row {
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: 4px;
+}
+
+.login #login {
+	background: #02a9f3;
+	border: none;
+}
+
+.login input::input-placeholder {
+	color: #666;
+}
+
+.login ::-webkit-input-placeholder {
+	color: #666!important;
+}

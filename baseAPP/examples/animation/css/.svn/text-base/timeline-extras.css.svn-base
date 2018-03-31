@@ -1,0 +1,25 @@
+
+.timeline {
+	box-shadow: 0 0px 4px rgba(0, 0, 0, 0.12);
+	border-radius: 5px;
+	padding: 25px 20px;
+	margin: 15px;
+	border: 1px solid #ddd;
+}
+
+.timeline-item-inner {
+	background: #F9F7F9;
+}
+
+.timeline-item-jiantou {
+	border-right: 8px solid #f8f7fa;
+}
+
+
+.timeline-item-content {
+	left: 350px;
+	position: relative;
+	transition: left .5s cubic-bezier(0.26, 0.79, 0.25, 1);
+}
+
+

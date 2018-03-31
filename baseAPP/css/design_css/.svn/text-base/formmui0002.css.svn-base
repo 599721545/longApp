@@ -1,0 +1,7 @@
+.panel-0_0 > .col-auto:nth-child(1){align-items:center;}
+.panel-0_0 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1){align-items:center;}
+.panel-0_0 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .btn1{background-color:#36acf5;color:#ffffff;display:inline-block;width:100%;}
+.panel-0_0 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1){align-items:center;}
+.panel-0_0 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1) .btn2{background-color:#36acf5;color:#ffffff;display:inline-block;width:100%;}
+.panel-0_0 > .col-auto:nth-child(1) .panel-1_2 > .col-auto:nth-child(1){align-items:center;}
+.panel-0_0 > .col-auto:nth-child(1) .panel-1_2 > .col-auto:nth-child(1) .btn3{display:inline-block;width:100%;}

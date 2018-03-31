@@ -1,0 +1,22 @@
+{
+  "lease/tab-webview-subpage-contact.html": {
+    "href": "lease/tab-webview-subpage-contact.html",
+    "resources": [],
+    "priority": 0
+  },
+  "lease/index.html": {
+    "href": "lease/index.html",
+    "resources": [],
+    "priority": 1
+  },
+  "lease/person_center.html": {
+    "href": "lease/person_center.html",
+    "resources": [],
+    "priority": 2
+  },
+  "lease/slider-with-title.html": {
+    "href": "lease/slider-with-title.html",
+    "resources": [],
+    "priority": 3
+  }
+}

@@ -1,0 +1,231 @@
+.navigate-title {
+	font-size: 16px;
+}
+
+.mui-table-view-cell.active .navigate-title {
+	color: #dd524d;
+}
+
+.mui-table-view-cell .navigate-img {
+	display: none;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 11px;
+	right: 16px;
+	background: url(../img/active.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.mui-table-view-cell.active .navigate-img {
+	display: block;
+}
+
+.part-title {
+	position: absolute;
+	right: 45px;
+	top: 11px;
+	font-size: 16px;
+	color: #757575;
+}
+
+.check-img {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 20px;
+	color: #bbb;
+}
+
+.part-val {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 45px;
+	text-align: right;
+	font-size: 14px;
+	color: #ff534d;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: keep-all;
+	width: 150px;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.screen-content {
+	flex-wrap: wrap;
+	display: flex;
+	margin-top: 10px;
+}
+
+.screen-content div {
+	margin-right: 10px;
+	background: #F1F2F6;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	width: 120px;
+	padding: 6px 25px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: keep-all;
+	font-size: 14px;
+	text-align: center;
+	position: relative;
+	border: 1px solid transparent;
+}
+
+.screen-content div.active {
+	border: 1px solid #E35353;
+	color: #E35353;
+	background: transparent;
+}
+
+.screen-content div i {
+	display: none;
+}
+
+.screen-content div.active i {
+	display: block;
+	background: url(../img/active.png) no-repeat;
+	background-size: 100% 100%;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: 6px;
+	top: calc(50% - 5px);
+}
+
+.mui-table-view-cell.mui-collapse.mui-active .mui-collapse-content.screen-part {
+	height: auto;
+}
+
+.mui-table-view-cell.mui-collapse .mui-collapse-content.screen-part {
+	display: block;
+	height: 55px;
+}
+
+.side-custom {
+	width: 100%;
+}
+
+.bottom-btn-div {
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	border-top: 1px solid #dedede;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index: 100;
+}
+
+.bottom-btn-div .bottom-btn {
+	height: 100%;
+	width: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bottom-btn-div .bottom-btn.bottom-btn-reset {
+	background: #FFFFFF;
+}
+
+.bottom-btn-div .bottom-btn.bottom-btn-submit {
+	background: #F23030;
+	color: #FFFFFF;
+}
+
+
+/*重写*/
+
+.mui-table-view-cell.mui-active {
+	background: transparent;
+}
+
+.mui-table-view-cell>a:not(.mui-btn).mui-active {
+	background: transparent;
+}
+
+.mui-table-view-cell.mui-collapse .mui-collapse-content {
+	padding: 0px;
+	margin: 0;
+}
+
+.mui-content>.mui-table-view:first-child {
+	margin-top: 0px;
+}
+
+.mui-off-canvas-right {
+	background: #FFFFFF;
+}
+
+.mui-table-view-cell.mui-collapse.mui-active .mui-collapse-content,
+.mui-table-view-cell.mui-collapse.mui-active .mui-table-view {
+	display: none;
+}
+
+.mui-table-view-cell.mui-collapse.mui-active>.mui-collapse-content,
+.mui-table-view-cell.mui-collapse.mui-active>.mui-collapse-content>.mui-table-view {
+	display: block;
+}
+
+.mui-table-view-cell {
+	padding: 11px 0px 11px 15px;
+}
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	margin: 0;
+	padding: 0px;
+}
+
+.mui-table-view-cell.mui-collapse .mui-table-view {
+	margin: 0;
+}
+
+.mui-table-view-cell.mui-collapse .mui-table-view .mui-table-view-cell {
+	padding: 0;
+}
+
+.mui-table-view-cell.mui-collapse.mui-active .mui-table-view-cell>a:not(.mui-btn).mui-active {
+	margin: 0;
+	padding: 0px;
+}
+
+.side-checkAll-ul .mui-table-view-cell.mui-collapse.mui-active {
+	padding: 0px;
+	margin: 0px;
+}
+
+.side-checkAll-ul .mui-table-view-cell>a:not(.mui-btn) {
+	margin: 0;
+	padding: 11px 0px 11px 15px;
+	font-size: 14px;
+	border-bottom: 1px solid #dedede;
+}
+
+.side-checkAll-ul .mui-table-view-cell.mui-collapse.mui-active .mui-table-view-cell>a:not(.mui-btn).mui-active {
+	margin: 0;
+	padding: 11px 0px 11px 15px;
+}
+
+.side-checkAll-ul .mui-table-view-cell.mui-collapse {
+	padding: 0px;
+}
+
+.side-checkAll-ul .mui-table-view {
+	background: transparent;
+}
+
+.mui-navigate-right:after,
+.mui-push-left:after,
+.mui-push-right:after {
+	font-size: 20px;
+}
+
+.mui-scroll-wrapper{
+	bottom: 50px;
+}

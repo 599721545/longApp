@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../css/base/mui.min.css">
+		<link rel="stylesheet" href="../../../css/base/mui.ctiy.css">
+
+		<link rel="stylesheet" href="../../../css/base/animate.css">
+		<link rel="stylesheet" href="../../../css/third_css/font-awesome.css">
+		<link rel="stylesheet" href="../../../css/base/common.css">
+
+		<link rel="stylesheet" href="../../../jsonData/formcity001.css">
+
+		<script type="text/javascript" src="../../../js/base/resolve/assignment-js.js"></script>
+		<script type="text/javascript" src="../../../js/base/resolve/resolve-js.js"></script>
+		<script type="text/javascript" src="../../../js/base/resolve/resolve-plug.js"></script>
+		<script type="text/javascript" src="../../../js/base/validate/data-validate.js"></script>
+		<style>
+			body {
+				overflow: hidden;
+				font-size: 14px;
+			}
+			input  {
+				font-size: 14px;
+			}
+			.mui-input-row label{
+				    padding: 13px 15px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="info" style="margin-top: 10px;"></div>
+		<script src="../../../js/mui/mui.js"></script>
+		<script src="../../../js/base/resolve/mui.ctiy.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			
+			
+			resolve.getHtmlVal("formcity001", mui("#info")[0], function() {
+				console.log("初始化完成");
+			});
+
+			mui.plusReady(function() {
+				plus.webview.currentWebview().setStyle({
+					scrollIndicator: 'none'
+				});
+
+				plus.key.addEventListener('keydown', function(e) {
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+
+			})
+		</script>
+	</body>
+
+</html>

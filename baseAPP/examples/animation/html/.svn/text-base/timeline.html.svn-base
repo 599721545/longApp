@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>页面加载等待框</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/timeline.css" />
+		<link rel="stylesheet" type="text/css" href="../css/my-app.css" />
+		<link rel="stylesheet" type="text/css" href="../css/timeline-extras.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="timeline">
+				<div class="timeline-item">
+					<div class="timeline-item-divider"></div>
+					<div class="timeline-item-img"></div>
+					<div class="timeline-item-content">
+						<div class="timeline-item-title">贷前风控经理汇总</div>
+						<div class="timeline-item-inner open">
+							<div class="timeline-item-jiantou"></div>
+							<div class="timeline-item-state"></div>
+							<div class="timeline-item-assignee">李小龙</div>
+							<div class="timeline-item-date">2017-09-04 15:58:50</div>
+							<div class="timeline-item-line"></div>
+							<div class="timeline-item-idea"></div>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-item-divider"></div>
+					<div class="timeline-item-img"></div>
+					<div class="timeline-item-content">
+						<div class="timeline-item-title">会签任务</div>
+						<div class="timeline-item-inner completed">
+							<div class="timeline-item-jiantou"></div>
+							<div class="timeline-item-state"></div>
+							<div class="timeline-item-assignee">李进</div>
+							<div class="timeline-item-date">2017-09-04 15:58:27</div>
+							<div class="timeline-item-line"></div>
+							<div class="timeline-item-idea">审批同意</div>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-item-divider"></div>
+					<div class="timeline-item-img"></div>
+					<div class="timeline-item-content">
+						<div class="timeline-item-title">风控总监</div>
+						<div class="timeline-item-inner refused">
+							<div class="timeline-item-jiantou"></div>
+							<div class="timeline-item-state"></div>
+							<div class="timeline-item-assignee">王文博</div>
+							<div class="timeline-item-date">2017-09-04 15:57:13</div>
+							<div class="timeline-item-line"></div>
+							<div class="timeline-item-idea">否决理由:同上</div>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-item-divider"></div>
+					<div class="timeline-item-img"></div>
+					<div class="timeline-item-content">
+						<div class="timeline-item-title">尽职调查</div>
+						<div class="timeline-item-inner rollbacked">
+							<div class="timeline-item-jiantou"></div>
+							<div class="timeline-item-state"></div>
+							<div class="timeline-item-assignee">李小龙</div>
+							<div class="timeline-item-date">2017-09-04 15:58:09</div>
+							<div class="timeline-item-line"></div>
+							<div class="timeline-item-idea">退回理由:工作繁忙,过两天再批</div>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-item-divider"></div>
+					<div class="timeline-item-img"></div>
+					<div class="timeline-item-content">
+						<div class="timeline-item-title">贷后风控经理</div>
+						<div class="timeline-item-inner completed">
+							<div class="timeline-item-jiantou"></div>
+							<div class="timeline-item-state"></div>
+							<div class="timeline-item-assignee">崔恺</div>
+							<div class="timeline-item-date">2017-09-04 15:56:52</div>
+							<div class="timeline-item-line"></div>
+							<div class="timeline-item-idea">审批同意</div>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-item-divider"></div>
+					<div class="timeline-item-img"></div>
+					<div class="timeline-item-content">
+						<div class="timeline-item-title">贷中风控经理</div>
+						<div class="timeline-item-inner completed">
+							<div class="timeline-item-jiantou"></div>
+							<div class="timeline-item-state"></div>
+							<div class="timeline-item-assignee">田晋</div>
+							<div class="timeline-item-date">2017-09-04 15:56:25</div>
+							<div class="timeline-item-line"></div>
+							<div class="timeline-item-idea">审批同意</div>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-item-divider"></div>
+					<div class="timeline-item-img"></div>
+					<div class="timeline-item-content" >
+						<div class="timeline-item-title">贷前风控经理</div>
+						<div class="timeline-item-inner completed">
+							<div class="timeline-item-jiantou"></div>
+							<div class="timeline-item-state"></div>
+							<div class="timeline-item-assignee">李小龙</div>
+							<div class="timeline-item-date">2017-09-04 15:56:02</div>
+							<div class="timeline-item-line"></div>
+							<div class="timeline-item-idea">审批同意</div>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-item-divider"></div>
+					<div class="timeline-item-img"></div>
+					<div class="timeline-item-content" >
+						<div class="timeline-item-title">资产总监审批</div>
+						<div class="timeline-item-inner completed">
+							<div class="timeline-item-jiantou"></div>
+							<div class="timeline-item-state"></div>
+							<div class="timeline-item-assignee">蒋毅</div>
+							<div class="timeline-item-date">2017-09-04 15:55:30</div>
+							<div class="timeline-item-line"></div>
+							<div class="timeline-item-idea">审批同意</div>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-item-divider"></div>
+					<div class="timeline-item-img"></div>
+					<div class="timeline-item-content" >
+						<div class="timeline-item-title">业务经理发起</div>
+						<div class="timeline-item-inner completed">
+							<div class="timeline-item-jiantou"></div>
+							<div class="timeline-item-state"></div>
+							<div class="timeline-item-assignee">李进</div>
+							<div class="timeline-item-date">2017-09-04 15:54:59</div>
+							<div class="timeline-item-line"></div>
+							<div class="timeline-item-idea">审批同意</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../../../js/third_js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			mui.init({});
+					
+			mui.plusReady(function() {
+				plus.webview.currentWebview().setStyle({
+					scrollIndicator: 'none'
+				});
+				
+				
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						plus.nativeUI.closeWaiting();
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+			});
+			setTimeout(function(){
+				appListProcessAnimation();
+			},500);
+			
+			function back(id) {
+				var w = plus.webview.getWebviewById(id);
+				w.close();
+			}
+
+			function appListProcessAnimation() {
+				var card = mui(".timeline-item-content");
+				var time = 0;
+				mui.each(card, function(i, item) {
+					time = 80 * i;
+					setTimeout(function() {
+						item.style.left = 0;
+					}, time)
+				});
+			}
+			
+			function appListProcessAnimationRes() {
+				var card = mui(".timeline-item-content");
+				var time = 0;
+				mui.each(card, function(i, item) {
+					time = 80 * i;
+					setTimeout(function() {
+						item.style.left = '350px';
+					}, time)
+				});
+			}
+		</script>
+	</body>
+
+</html>

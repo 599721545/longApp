@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/modify.css">
+		<link rel="stylesheet" type="text/css" href="../css/my-app.css"/>
+		<!--App自定义的css-->
+		<style>
+			h5 {
+				margin: 5px 7px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">表单</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-content-padded" style="margin: 0px;">
+				<h5>默认搜索框：</h5>
+				
+				<div class="mui-input-row mui-search">
+					<input type="search" class="mui-input-clear" placeholder="">
+				</div>
+				
+				<h5 class="mui-plus-visible">语音输入搜索框：</h5>
+				
+				<div class="mui-input-row mui-search mui-plus-visible">
+					<input id="search" type="search" class="mui-input-speech mui-input-clear" placeholder="带语音输入的搜索框">
+				</div>
+				<h5>密码框：</h5>
+				<div class="mui-input-row mui-password">
+					<input type="password" class="mui-input-password">
+				</div>
+				<div class="mui-card">
+				<form class="mui-input-group">
+					<div class="mui-input-row">
+						<label>Input</label>
+						<input type="text" placeholder="普通输入框">
+					</div>
+					<div class="mui-input-row">
+						<label>Input</label>
+						<input type="text" class="mui-input-clear" placeholder="带清除按钮的输入框">
+					</div>
+
+					<div class="mui-input-row mui-plus-visible">
+						<label>Input</label>
+						<input type="text" class="mui-input-speech mui-input-clear" placeholder="语音输入">
+					</div>
+					<div class="mui-button-row">
+						<button type="button" class="mui-btn mui-btn-primary" onclick="return false;">确认</button>&nbsp;&nbsp;
+						<button type="button" class="mui-btn mui-btn-danger" onclick="return false;">取消</button>
+					</div>
+				</form>
+				</div>
+				<div class="mui-input-row" style="margin: 10px;">
+					<textarea id="textarea" rows="5" placeholder="多行文本框"></textarea>
+				</div>
+			</div>
+			
+			<h5 class="mui-content-padded">图标左对齐</h5>
+			<div class="mui-card">
+				<form class="mui-input-group">
+					<div class="mui-input-row mui-radio mui-left">
+						<label>radio</label>
+						<input name="radio1" type="radio">
+					</div>
+					<div class="mui-input-row mui-radio mui-left">
+						<label>radio</label>
+						<input name="radio1" type="radio" checked>
+					</div>
+					<div class="mui-input-row mui-radio mui-left mui-disabled">
+						<label>disabled radio</label>
+						<input name="radio1" type="radio" disabled="disabled">
+					</div>
+				</form>
+			</div>
+		
+			<h5 class="mui-content-padded">图标右对齐</h5>
+			<div class="mui-card">
+				<form class="mui-input-group">
+					<div class="mui-input-row mui-radio">
+						<label>radio</label>
+						<input name="radio1" type="radio">
+					</div>
+					<div class="mui-input-row mui-radio">
+						<label>radio</label>
+						<input name="radio1" type="radio" checked>
+					</div>
+					<div class="mui-input-row mui-radio mui-disabled">
+						<label>disabled radio</label>
+						<input name="radio1" type="radio" disabled="disabled">
+					</div>
+				</form>
+			</div>
+			<h5 class="mui-content-padded">列表模式的单选框</h5>
+			<div class="mui-card">
+			
+			<ul class="mui-table-view mui-table-view-radio">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						Item 1
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-selected">
+					<a class="mui-navigate-right">
+						Item 2
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						Item 3
+					</a>
+				</li>
+			</ul>
+			<div class="mui-content-padded">
+				<p id="info"></p>
+			</div>
+			</div>
+			<h5 class="mui-content-padded">图标左对齐</h5>
+			<div class="mui-card">
+				<form class="mui-input-group">
+					<div class="mui-input-row mui-checkbox mui-left">
+						<label>checked：false</label>
+						<input name="checkbox" value="Item 1" type="checkbox" >
+					</div>
+					<div class="mui-input-row mui-checkbox mui-left">
+						<label>checked：true</label>
+						<input name="checkbox" value="Item 2" type="checkbox" checked>
+					</div>
+					<div class="mui-input-row mui-checkbox mui-left mui-disabled">
+						<label>disabled checkbox</label>
+						<input name="checkbox" type="checkbox" disabled="disabled">
+					</div>
+				</form>
+			</div>
+			<h5 class="mui-content-padded">图标右对齐</h5>
+			<div class="mui-card">
+				<form class="mui-input-group">
+					<div class="mui-input-row mui-checkbox">
+						<label>checked：false</label>
+						<input name="checkbox1" value="Item 3" type="checkbox" >
+					</div>
+					<div class="mui-input-row mui-checkbox">
+						<label>checked：true</label>
+						<input name="checkbox1" value="Item 4" type="checkbox" checked>
+					</div>
+					<div class="mui-input-row mui-checkbox mui-disabled">
+						<label>disabled checkbox</label>
+						<input name="checkbox1" type="checkbox" disabled="disabled">
+					</div>
+				</form>
+			</div>
+			<div class="mui-card">
+		
+			<ul class="mui-table-view">
+				
+				<li class="mui-table-view-cell">
+					<span></span>
+					<div class="mui-switch mui-switch-blue mui-active">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<span></span>
+					<div class="mui-switch mui-switch-blue">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<span></span>
+					<div class="mui-switch mui-switch-blue mui-switch-mini mui-active">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<span></span>
+					<div class="mui-switch mui-switch-blue mui-switch-mini">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+			</ul>
+			</div>
+				
+			
+			<button type="button" class="mui-btn mui-btn-blue mui-btn-block">提交</button>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			 //语音识别完成事件
+			document.getElementById("search").addEventListener('recognized', function(e) {
+				console.log(e.detail.value);
+			});
+
+			var nativeWebview, imm, InputMethodManager;
+			var initNativeObjects = function() {
+				if (mui.os.android) {
+					var main = plus.android.runtimeMainActivity();
+					var Context = plus.android.importClass("android.content.Context");
+					InputMethodManager = plus.android.importClass("android.view.inputmethod.InputMethodManager");
+					imm = main.getSystemService(Context.INPUT_METHOD_SERVICE);
+				} else {
+					nativeWebview = plus.webview.currentWebview().nativeInstanceObject();
+				}
+			};
+			var showSoftInput = function() {
+				if (mui.os.android) {
+					imm.toggleSoftInput(0, InputMethodManager.SHOW_FORCED);
+				} else {
+					nativeWebview.plusCallMethod({
+						"setKeyboardDisplayRequiresUserAction": false
+					});
+				}
+				setTimeout(function() {
+					var inputElem = document.querySelector('input');
+					inputElem.focus();
+					inputElem.parentNode.classList.add('mui-active'); //第一个是search，加上激活样式
+				}, 200);
+			};
+			mui.plusReady(function() {
+				plus.webview.currentWebview().setStyle({scrollIndicator:'none'});
+				initNativeObjects();
+				//showSoftInput();
+				
+					plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+			});
+			mui('.mui-content .mui-switch').each(function() { //循环所有toggle
+				//toggle.classList.contains('mui-active') 可识别该toggle的开关状态
+				this.parentNode.querySelector('span').innerText = '状态：' + (this.classList.contains('mui-active') ? 'true' : 'false');
+				/**
+				 * toggle 事件监听
+				 */
+				this.addEventListener('toggle', function(event) {
+					//event.detail.isActive 可直接获取当前状态
+					this.parentNode.querySelector('span').innerText = '状态：' + (event.detail.isActive ? 'true' : 'false');
+				});
+			});
+			   var rangeList = document.querySelectorAll('input[type="range"]');
+	    for(var i=0,len=rangeList.length;i<len;i++){
+	        rangeList[i].addEventListener('input',function(){
+	            if(this.id.indexOf('field')>=0){
+	                document.getElementById(this.id+'-input').value = this.value;
+	            }else{
+	                document.getElementById(this.id+'-val').innerHTML = this.value;
+	            }
+	            
+	
+	        });
+	    }
+	
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,120 @@
+/*------公共样式------*/
+
+body {
+	background: #f6f6f6
+}
+
+.mui-title {
+	font-size: 20px;
+}
+
+/*-----pop样式开始-----*/
+
+.mui-popover {
+	min-height: 80px;
+	width: 140px;
+	text-align: left;
+}
+
+.mui-popover .mui-scroll-wrapper {
+	margin: 7px 10px;
+	width: calc(100% - 20px);
+	font-size: 12px;
+}
+
+.mui-popover .mui-scroll-wrapper p {
+	font-size: 12px;
+}
+
+
+/*-----卡片样式开始-----*/
+
+.card {
+	margin: 0;
+	box-shadow: 0 0px 4px rgba(0, 0, 0, 0.12);
+	border-radius: 5px;
+}
+
+
+/*-----搜索栏样式开始-----*/
+
+.searchbar {
+	background: #f0f0f0;
+}
+
+
+/*-----导航条样式开始-----*/
+
+.mui-bar-nav {
+	padding-top: 20px;
+	height: 64px;
+	background: #FFF;
+	box-shadow: none;
+	border-bottom: 1px solid #ddd;
+}
+
+.mui-bar-nav~.mui-content {
+	padding-top: 64px;
+	background: #f6f6f6;
+}
+
+
+/*-----字体样式开始-----*/
+
+@font-face {
+	font-family: Muiicons;
+	font-weight: 400;
+	font-style: normal;
+	src: url(../../css/mui/fonts/mui.ttf) format('truetype')
+}
+
+
+/*-----tab-webview-main.html样式开始-----*/
+
+.mybartab a {
+	font-size: 12px !important;
+	padding-top: 5px !important;
+	padding-bottom: 0px !important;
+}
+
+.mybartab {
+	background: #fff !important;
+	height: 50px !important;
+	border-top: 1px solid #ddd;
+	box-shadow: none;
+}
+
+.mybartab a:link,
+.toolbar a:visited,
+.toolbar a:hover {
+	color: #666 !important;
+}
+
+.mybartab i {
+	font-size: 24px;
+	line-height: 24px;
+	height: 24px;
+	display: block;
+	margin: 0 auto;
+}
+
+.mybartab .mui-tab-item i.hover {
+	display: none
+}
+
+.mybartab .mui-active .tabbar-label {
+	color: #03a8f3;
+}
+
+.mybartab .mui-active i {
+	color: #03a8f3;
+}
+
+.mybartab .mui-active i.hover {
+	display: block;
+}
+
+.mybartab .mui-active i {
+	display: none;
+}
+

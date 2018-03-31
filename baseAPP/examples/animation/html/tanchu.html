@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/my-app.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<style type="text/css">
+			a ,span {
+				color:#1EACF0 ;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="firstHeader" class="mui-bar mui-bar-nav" style="padding-top: 20px;height: 64px;">
+			<a class="mui-icon mui-icon-arrowdown mui-pull-left"><span>北京</span></a>
+			<div class="search firstSearch">
+						<i class="mui-icon mui-icon-search"></i>
+						<input type="text" placeholder="输入商户名、地点" />
+			</div>
+			<a class="mui-icon mui-icon-email mui-pull-right"></a>
+		</header>
+		<div id="wrap">
+			<!-- 头部 -->
+			<!--<div id="firstHeader" class="titlebar activebar" >
+				<div class="topbar">
+					<div class="citylist fl" id="citylist">北京<img src="../image/title_home_arrow_down_normal.png" alt="" class="citylistarrow"></div>
+					<div class="search firstSearch">
+						<img src="../image/booking_channel_search_icon.png" alt="">
+						<input type="text" placeholder="输入商户名、地点" />
+					</div>
+					<img src="../image/send_msg.png" alt="" class="fr headerico hr01">
+				</div>
+			</div>-->
+
+			<div id="main" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<div class="mui-card">
+						<div class="mui-card-header">效果操作说明</div>
+					<div class="mui-card-content" style="padding:80px 15px 480px;">下拉操作时搜索框变化为通栏模式<br>上拉操作时变化为初始样式<br>如需返回请按返回或右滑</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			mui.init({
+				swipeBack:true
+			});
+
+			mui.plusReady(function() {
+				plus.webview.currentWebview().setStyle({
+					scrollIndicator: 'none'
+				});
+
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+				
+				mui('.mui-scroll-wrapper').scroll({
+					indicators: false
+				});
+
+				var scrolling = false;
+				document.querySelector('.mui-scroll-wrapper').addEventListener('scrollstart', function(e) {
+					scrolling = true;
+					var curscroll = e.detail.y;
+					//console.log(curscroll);
+				});
+				document.querySelector('.mui-scroll-wrapper').addEventListener('scroll', function(e) {
+					var curscroll = e.detail.y;
+					//console.log(curscroll);
+
+					if(curscroll < -30) {
+						document.getElementById('firstHeader').classList.add('header-on');
+					} else {
+						document.getElementById('firstHeader').classList.remove('header-on');
+					}
+				});
+				document.querySelector('.mui-scroll-wrapper').addEventListener('scrollend', function(e) {
+					var curscroll = e.detail.y;
+					scrolling = false;
+					//console.log(curscroll);
+				});
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/my-app.css" />
+		<link rel="stylesheet" type="text/css" href="../css/xuanfuanniu.css" />
+		<link rel="stylesheet" type="text/css" href="../css/suspend.css"/>
+		<style type="text/css">
+			.mui-scroll-wrapper {
+				top: 64px;
+			}
+			.mui-card {
+				text-align: center;
+				color: #999;
+			}
+		</style>
+	</head>
+
+	<body class="creditDetail2">
+	
+		<div class="mui-content">
+					<div class="mui-card">
+						<div class="mui-card-header">效果操作说明</div>
+					<div class="mui-card-content" style="padding:160px 15px;">
+						点击小球弹出操作按钮，选择对应的操作行为<br>
+						成功推送消息，失败提示取消<br>
+						如需取消再次点击小球
+						
+					</div>
+					</div>
+
+				<!--悬浮按钮-->
+		<div class="PathInner" id="PathMenu" style="position: absolute; top:450px; right: 20px;">
+
+			<div class="PathMain">
+
+				<div class="Tmain" onclick="PathRun();">
+
+					<div class="rotate"><span class="cover"></span></div>
+
+				</div>
+
+			</div>
+
+			<div id="ty" class="PathItem">
+
+				<a class="link" href="#" title="">
+
+					<span class="item" style="background-image:url(../css/img/xuanfu05.png);background-size: 70%;"></span>
+
+				</a>
+
+			</div>
+
+			<div id="fj" class="PathItem">
+
+				<a class="link" href="#" title="">
+
+					<span class="item" style="background-image:url(../css/img/xuanfu04.png);background-size: 70%;"></span>
+
+				</a>
+
+			</div>
+
+			<div id="th" class="PathItem">
+
+				<a class="link" href="#" title="">
+
+					<span class="item" style="background-image: url(../css/img/xuanfu03.png);background-size: 70%;"></span>
+
+				</a>
+
+			</div>
+
+		</div>
+		</div>
+			</div>
+		</div>
+		
+
+		
+
+		<script src="../js/xuanfuanniu.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: false
+			});
+
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: false
+				});
+				
+
+				mui.plusReady(function() {
+					plus.webview.currentWebview().setStyle({
+						scrollIndicator: 'none'
+					});
+
+					plus.key.addEventListener('keydown', function(e) {
+						console.log(e.keyCode);
+						if(e.keyCode == 4) {
+							var w = plus.webview.currentWebview();
+							plus.screen.lockOrientation("portrait-primary");
+							plus.webview.close(w);
+						}
+					});
+
+					mui('#PathMenu').on('tap', '.PathItem', function(e) {
+						var action = this.id;
+						if(action == 'ty') {
+							prop('同意', e);
+						} else if(action == 'th') {
+							prop('退回', e);
+						} else {
+							prop('否决', e);
+						}
+					});
+
+					function prop(advice, e) {
+						e.detail.gesture.preventDefault(); //修复iOS 8.x平台存在的bug，使用plus.nativeUI.prompt会造成输入法闪一下又没了
+						var btnArray = ['提交', '取消'];
+						mui.prompt('请输入' + advice + '的意见', '您的意见...', '操作说明', btnArray, function(e) {
+							console.log(e);
+							if(e.index == 0) {
+								plus.push.createMessage("您本次的意见：" + advice + "\n您的意见说明：" + e.value);
+								PathRun();
+							} else {
+								mui.toast("您取消了当前操作！",{duration:3000});
+								PathRun();
+							}
+						});
+					}
+				});
+			})(mui);
+
+			function back(id) {
+				var w = plus.webview.getWebviewById(id);
+				w.close();
+			}			
+		</script>
+	</body>
+
+</html>

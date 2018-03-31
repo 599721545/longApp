@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../../../css/third_css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/base/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/base/animate.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/design_css/formmui0001.css" />
+		<script type="text/javascript" src="../../../js/base/resolve/assignment-js.js"></script>
+		<script type="text/javascript" src="../../../js/base/resolve/resolve-js.js"></script>
+		<script type="text/javascript" src="../../../js/base/validate/data-validate.js"></script>
+		<script type="text/javascript" src="../../../js/base/resolve/resolve-plug.js"></script>
+		<script src="../js/mui.min.js"></script>
+	</head>
+
+	<body>
+		<div id="info"></div>
+		
+		<script type="text/javascript">
+			mui.init({});
+			
+			var map = {};
+			var list = [];
+
+			var demo = {
+				"demoName": "张强",
+				"demoDate": "2017-01-01",
+				"amt": "1500",
+				"lilv": "0.38"
+			};
+			var demo1 = {
+				"demoName": "张强",
+				"demoDate": "2017-01-01",
+				"amt": "1500",
+				"lilv": "0.38"
+			};
+			var demo2 = {
+				"demoName": "张强",
+				"demoDate": "2017-01-01",
+				"amt": "1500",
+				"lilv": "0.38"
+			};
+			var demo3 = {
+				"demoName": "张强",
+				"demoDate": "2017-01-01",
+				"amt": "1500",
+				"lilv": "0.38"
+			};
+			var demo4 = {
+				"demoName": "张强",
+				"demoDate": "2017-01-01",
+				"amt": "1500",
+				"lilv": "0.38"
+			};
+			
+			list.push(demo);
+			list.push(demo1);
+			list.push(demo2);
+			list.push(demo3);
+			list.push(demo4);
+
+			map["demo"] = list;
+			mui.plusReady(function() {
+
+				console.log(plus.webview.currentWebview().name);
+
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+
+				resolve.getHtmlVal("formmui0001", "#info", function(obj) {
+
+				},map);
+			});
+
+			function back(id) {
+				var w = plus.webview.getWebviewById(id);
+				w.close();
+			}
+		</script>
+	</body>
+
+</html>

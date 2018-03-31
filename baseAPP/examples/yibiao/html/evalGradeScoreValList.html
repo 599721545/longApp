@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>综合评分</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../../css/mui/mui.min.css">
+		<!--<link rel="stylesheet" type="text/css" href="../css/approveList.css" />-->
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/evalGradeScoreValList.css" />
+		<style>
+			.chart div {
+				margin: 0 auto !important;
+			}
+			
+			
+			.chart div canvas {
+				margin: 0 auto !important;
+			}
+			.chart {
+				height: 240px;
+				margin: 0px;
+				padding: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="padding-top: 20px;height: 64px;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: #1EACF0;"></a>
+			<h1 class="mui-title" style="font-size: 20px;">综合评分</h1>
+		</header>
+		<div class="mask"></div>
+		<div class="popover-value">
+			<div class="popover-inner">
+				<div class="echarts-text">历史得分</div>
+				<div class="chart" id="lineChartSummary"></div>
+			</div>
+		</div>
+		<div id="post" class="approve-type" style="display:none">
+			<div class="table-div18">
+				<span class="font-size5">审批意见说明</span>
+				<a id="post2" href="#"></a>
+			</div>
+			<div>
+				<textarea id="text1" class="text1" type="text" style="height: 170px ;" placeholder="请输入您的审批意见"></textarea>
+
+			</div>
+			<div class="table-div19">
+				<button class="button-Type" type="button" style="width: 50%;">取消</button>
+				<button class="button-Type1" type="button" style="width: 50%;">提交</button>
+			</div>
+			<div class="postSlide" id="postSlide">
+				<ul>
+					<li>同意，恭喜您成功通过审核！</li>
+					<li>月收入太低</li>
+					<li>上传的资料不全</li>
+					<li>重新上传资料</li>
+				</ul>
+				<em></em>
+			</div>
+			<div class="postSlide" id="veto">
+				<ul>
+					<li>否决，恭喜您成功通过审核！</li>
+					<li>月收入太低</li>
+					<li>上传的资料不全</li>
+					<li>重新上传资料</li>
+				</ul>
+				<em></em>
+			</div>
+			<div class="postSlide" id="Remand">
+				<ul>
+					<li>发回重审，恭喜您成功通过审核！</li>
+					<li>月收入太低</li>
+					<li>上传的资料不全</li>
+					<li>重新上传资料</li>
+				</ul>
+				<em></em>
+			</div>
+		</div>
+		<div class="approve-mask"></div>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper" style="margin-top:64px;margin-bottom: 10px;padding-bottom:10px">
+				<div class="mui-scroll">
+					<div id="details">
+						<div class="mui-card approvecard myevaDxbox">
+							<div class="mui-card-content card-top">
+								<div class="provetitle-left">
+									<p>评分时间：2017-09-18</p>
+								</div>
+								<div class="provetitle-right">
+									<button class="table-div3">历史评分</button>
+								</div>
+								<div class="echarts">
+									<div id="main" class="echart" style="width:100%;height:180px;"></div>
+									<div class="echarts-score">A</div>
+									<div class="echarts-comment">信用良好</div>
+								</div>
+								<div class="comment">
+									<p>偿还债务能力较强、较易受不利环境影响、等级风险低</p>
+								</div>
+								<div class="scort">440.0</div>
+								<div class="company">总分</div>
+							</div>
+						</div>
+						<div class="mui-card myevaDxbox mui-card-bottom">
+							<div class="mui-card-content" style="padding:10px 15px;">
+								<div id="linechar" style="height:280px;width:100%;overflow:visible;position: relative;left: 0px;display: none;"></div>
+								<div id="linechar11" style="height:220px;width:100%;overflow:visible;position: relative;left: 0px;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/echarts-all.js"></script>
+		<script src="../js/echarts.min.js"></script>
+		<script src="../js/evalGradeScoreValList.js"></script>
+		<script>
+			var lineChart = echarts.init(document.getElementById('linechar11'));
+			var dataBJ = [
+    [55,95,80,60,81],
+    
+];
+
+var dataGZ = [
+    [94,88,82,97,93,],
+    
+];
+
+var dataSH = [
+    [78,82,99,82,95,],
+    
+];
+
+var lineStyle = {
+    normal: {
+        width: 1,
+        opacity: 0.5
+    }
+};
+
+optionline = {
+    
+    title: {
+        text: '2017年消费记录',
+        left: '0',
+        textStyle: {
+            color: '#333',
+            fontWeight :'normal',
+            fontSize :'14'
+        }
+    },
+    legend: {
+        data: ['第一季度', '第二季度', '第三季度'],
+    
+        right:'16',
+        top:0,
+       	orient:'vertical',
+        selectedMode: 'single'
+    },
+    // visualMap: {
+    //     show: true,
+    //     min: 0,
+    //     max: 20,
+    //     dimension: 6,
+    //     inRange: {
+    //         colorLightness: [0.5, 0.8]
+    //     }
+    // },
+    radar: {
+        indicator: [
+            {name: '信用历史长短', max: 100},
+            {name: '公共记录', max: 100},
+            {name: '信用额度饱和度', max: 100},
+            {name: '透支情况', max: 100},
+            {name: '毁约情况', max: 100}
+        ],
+        radius:'50%',
+        center: ['40%', '60%'],
+        shape: 'circle',
+        splitNumber: 5,
+        
+        name: {
+            textStyle: {
+                color: '#8f8f94'
+            }
+        },
+        splitLine: {
+            lineStyle: {
+                color: [
+                    'rgba(238, 197, 102, 0.1)', 'rgba(238, 197, 102, 0.2)',
+                    'rgba(238, 197, 102, 0.4)', 'rgba(238, 197, 102, 0.6)',
+                    'rgba(238, 197, 102, 0.8)', 'rgba(238, 197, 102, 1)'
+                ].reverse()
+            }
+        },
+        splitArea: {
+            show: false
+        },
+        axisLine: {
+            lineStyle: {
+                color: 'rgba(238, 197, 102, 0.4)'
+            }
+        }
+    },
+    series: [
+        {
+            name: '第一季度',
+            type: 'radar',
+            lineStyle: lineStyle,
+            data: dataBJ,
+            symbol: 'none',
+            itemStyle: {
+                normal: {
+                    color: '#ff3324'
+                }
+            },
+            areaStyle: {
+                normal: {
+                    opacity: 0.4
+                }
+            }
+        },
+        {
+            name: '第二季度',
+            type: 'radar',
+            lineStyle: lineStyle,
+            data: dataSH,
+            symbol: 'none',
+            itemStyle: {
+                normal: {
+                    color: '#0ec300'
+                }
+            },
+            areaStyle: {
+                normal: {
+                    opacity: 0.4
+                }
+            }
+        },
+        {
+            name: '第三季度',
+            type: 'radar',
+            lineStyle: lineStyle,
+            data: dataGZ,
+            symbol: 'none',
+            itemStyle: {
+                normal: {
+                    color: '#3fc5fd'
+                }
+            },
+            areaStyle: {
+                normal: {
+                    opacity: 0.4
+                }
+            }
+        }
+    ]
+};
+	
+	lineChart.setOption(optionline);
+		</script>
+	</body>
+
+</html>

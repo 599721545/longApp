@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../css/my-app.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="../grid-service.html"></a>
+			<h1 class="mui-title">审批列表</h1>
+		</header>
+		<div class="mui-content">
+
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+
+			});
+			var flag = 0;
+			function setHtml(data) {
+				var html = '<div class="mui-card appList"><div class="mui-card-header"><span class="card-header-cifName">' + data.cifName +
+					'</span><span class="card-header-date">' + data.date +
+					'</span></div><div class="mui-card-content"><div class="card-content-inner my-inner"><div class="card-content-inner-header"><i class="prdname-lico"></i><span class="card-header-prdName">' + data.prdName +
+					'</span></div><div class="card-content-inner-center"><span>申请金额:</span><span class="card-header-applyAmt">' + data.applyAmt +
+					'</span><span class="card-header-lv-label">|执行利率:<b>' + data.assignee +
+					'</b></span></div><div class="card-content-inner-footer"><span class="card-header-description">客户经理:<span class="card-header-descriptxt">' + data.description + '' + data.jigou +
+					'</span></span></div></div></div></div>';
+				return html;
+			}
+
+			mui.get('../../json/tab2_credit_list.json', {}, function(response) {
+				var html = '';
+				for(var i = 0; i < response.length; i++) {
+					html += setHtml(response[i]);
+				}
+				document.getElementsByClassName('mui-content')[0].innerHTML = html;
+				appListAnimation();	
+			}, 'json');
+
+			document.getElementsByClassName('mui-content')[0].addEventListener('tap', function() {
+				var w = plus.webview.create('tab2_credit_detail.html');
+				plus.webview.show(w, 'zoom-fade-out', 600, {
+					acceleration: 'auto'
+				})
+			});
+
+			/*审批列表效果*/
+			function appListAnimation() {
+				var card = document.getElementsByClassName('appList');
+				mui.each(card,function(i, item) {
+					var time = 100 * i;
+					setTimeout(function() {
+						item.style.left = 0;
+					}, time);
+				});
+			}
+			
+			mui.init({});
+			mui.plusReady(function () {
+				plus.webview.currentWebview().setStyle({scrollIndicator:'none'});
+			    plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+							var w = plus.webview.currentWebview();
+							plus.screen.lockOrientation("portrait-primary");
+							plus.webview.close(w);
+					}
+				});
+			})
+		</script>
+	</body>
+
+</html>

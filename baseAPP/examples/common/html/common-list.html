@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/list.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a id="help-center" class="mui-navigate-right" rel="help-center.html">帮助中心</a>
+				</li>
+				
+				<li  class="mui-table-view-cell">
+					<a id="center" class="mui-navigate-right" rel="center.html">个人中心</a>
+				</li>
+				<li  class="mui-table-view-cell">
+					<a id="kehu" class="mui-navigate-right" rel="kehu.html">客户中心</a>
+				</li>
+				
+				<li  class="mui-table-view-cell">
+					<a id="shenqing" class="mui-navigate-right" rel="shenqing.html">申请列表</a>
+				</li>
+				<li  class="mui-table-view-cell">
+					<a id="yuqi" class="mui-navigate-right" rel="yuqi.html">逾期/笔数</a>
+				</li>
+				<li  class="mui-table-view-cell">
+					<a id="huankuan" class="mui-navigate-right" rel="huankuanlishi.html">还款历史</a>
+				</li>
+				<li  class="mui-table-view-cell">
+					<a id="credit" class="mui-navigate-right" rel="../../../component/services/credit_list2.html">审批中心</a>
+				</li>
+				<li  class="mui-table-view-cell">
+					<a id="shenpi" class="mui-navigate-right" rel="shenpi.html">审批列表</a>
+				</li>
+			</ul>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../../../js/base/common/dyheader.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/base/resolve/resolve-js.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+
+			mui.plusReady(function() {
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+
+			});
+			
+			mui('.mui-content').on("tap", "a", function() {
+					var id = this.id;
+					var rel = this.rel;
+					dyheader.init(rel,id);
+			});
+
+			function back(id) {
+				var w = plus.webview.getWebviewById(id);
+				w.close();
+			}
+		</script>
+	</body>
+
+</html>

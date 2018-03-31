@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/list.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li id="credit" class="mui-table-view-cell">
+					<a class="mui-navigate-right">信用查询</a>
+				</li>
+				<li id="census" class="mui-table-view-cell">
+					<a class="mui-navigate-right" >统计分析</a>
+				</li>
+
+			</ul>
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../../../js/base/common/dyheader.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/base/resolve/resolve-js.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+
+			mui.plusReady(function() {
+				
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+
+			});
+			
+			document.getElementById("credit").addEventListener('tap',function(){
+				plus.screen.lockOrientation("portrait-primary");
+				var w = plus.webview.create("evalGradeScoreValList.html", 'credit');
+				plus.webview.show(w, 'zoom-fade-out', 600, {
+					acceleration: 'auto'
+				});
+			});
+			
+			document.getElementById("census").addEventListener('tap',function(){
+				plus.screen.lockOrientation("landscape-primary");
+				var w = plus.webview.create("../../map/html/tab1-char1.html", 'census');
+				plus.webview.show(w, 'zoom-fade-out', 600, {
+					acceleration: 'auto'
+				});
+			});
+			
+			function back(id) {
+				var w = plus.webview.getWebviewById(id);
+				w.close();
+			}
+		</script>
+	</body>
+
+</html>

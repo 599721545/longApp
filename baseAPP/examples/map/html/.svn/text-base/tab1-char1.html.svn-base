@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" style="height: 100%;">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>手势锁屏示例</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/my-app.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<!--App自定义的css-->
+		<style>
+			.mui-bar-nav~.mui-content {
+				padding-top: 0;
+			}
+			
+			#container,
+			#container2,
+			#container3 {
+				background: #fff !important;
+			}
+		</style>
+	</head>
+
+	<body style="height: 100%;">
+		<!--定位-->
+		<div class="mui-bar mui-bar-nav" style="z-index:999; background: none;box-shadow:none">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="padding-top: 6px;color: #1EACF0;"></a>
+
+		</div>
+		<div class="mui-content" style=" height: 100%;">
+
+			<div style="position: relative; height: 100%;width: 100%; overflow: hidden;">
+				<div id="mainMap" style="height: 100%;width: 50%;background: #fff;user-select: none;float: left;"></div>
+				<div id="container" style="height: 50%;width: 50%;user-select: none;float: right;background:#fff !important; margin-top: 4px;"></div>
+				<div id="container2" style="height: 50%;width: 25%;user-select: none;float: left;background: #fff !important;"></div>
+				<div id="container3" style="height: 50%;width: 25%;user-select: none;float: right;background: #fff !important;"></div>
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/china.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tab1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function() {
+				document.getElementsByClassName("mui-action-back")[0].addEventListener('tap', function() {
+					plus.screen.lockOrientation("portrait-primary");
+					plus.webview.close('tab1-char1');
+				});
+
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

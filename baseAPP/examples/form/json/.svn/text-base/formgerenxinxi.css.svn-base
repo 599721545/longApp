@@ -1,0 +1,5 @@
+.bottom-div{padding:11px 15px 11px 15px;}
+.bottom-div .col-auto:nth-child(1){}
+.bottom-div .col-auto:nth-child(1) .bottom-div-label{color:#bbbbbb;display:inline-block;font-size:14px;margin:0px 0px 25px 0px;}
+.bottom-div .col-auto:nth-child(1) .buttom-div-btn{display:inline-block;}
+.col-auto:nth-child(1){}

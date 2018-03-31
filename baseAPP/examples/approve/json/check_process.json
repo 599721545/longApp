@@ -1,0 +1,80 @@
+{
+    "paramList": [
+        {
+            "activityName": "node6768287995",
+            "approveIdea": "1111111111111111",
+            "assignee": "张倩",
+            "create": "2017-09-04 15:58:09",
+            "dbId": "9160",
+            "description": "会签任务",
+            "duration": "0天0小时0分钟17秒",
+            "end": "2017-09-04",
+            "endNum": 0,
+            "execution": "process_201742116925641.9139.1.9158",
+            "result": "审批中",
+            "startNum": 0,
+            "state": "completed"
+        },
+        {
+            "activityName": "node1265447758",
+            "approveIdea": "1111111111111",
+            "assignee": "王三孙",
+            "create": "2017-09-04 15:57:13",
+            "dbId": "9155",
+            "description": "贷前风控经理尽职调查",
+            "duration": "0天0小时0分钟56秒",
+            "end": "2017-09-04 ",
+            "endNum": 0,
+            "execution": "process_201742116925641.9139",
+            "result": "通过申请",
+            "startNum": 0,
+            "state": "completed"
+        },
+        {
+            "activityName": "node9727916943",
+            "approveIdea": "111",
+            "assignee": "崔恺",
+            "create": "2017-09-04 15:56:25",
+            "dbId": "9151",
+            "description": "贷后风控经理",
+            "duration": "0天0小时0分钟27秒",
+            "end": "2017-09-04 ",
+            "endNum": 0,
+            "execution": "process_201742116925641.9139",
+            "result": "通过申请",
+            "startNum": 0,
+            "state": "completed"
+        },
+        {
+            "activityName": "node3181881839",
+            "approveIdea": "111",
+            "assignee": "王敏",
+            "create": "2017-09-04 15:55:30",
+            "dbId": "9147",
+            "description": "贷前风控经理",
+            "duration": "0天0小时0分钟32秒",
+            "end": "2017-09-04 ",
+            "endNum": 0,
+            "execution": "process_201742116925641.9139",
+            "result": "通过申请",
+            "startNum": 0,
+            "state": "completed"
+        },
+        {
+            "activityName": "node4211584716",
+            "approveIdea": "111",
+            "assignee": "蒋毅",
+            "create": "2017-09-04 15:54:59",
+            "dbId": "9142",
+            "description": "资产总监审批",
+            "duration": "0天0小时0分钟30秒",
+            "end": "2017-09-04 ",
+            "endNum": 0,
+            "execution": "process_201742116925641.9139",
+            "result": "通过申请",
+            "startNum": 0,
+            "state": "completed"
+        }
+    ],
+    "resultCode": "0"
+}

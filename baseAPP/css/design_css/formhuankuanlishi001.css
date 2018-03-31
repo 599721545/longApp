@@ -1,0 +1,38 @@
+.card-1.panel-0_1{display:flex;}
+.card-1.panel-0_1 > .col-auto:nth-child(1){}
+.card-1.panel-0_1 > .col-auto:nth-child(1) .card-1-content.panel-1_1{display:flex;margin:px px px px;padding:5px 10px 10px 10px;}
+.card-1.panel-0_1 > .col-auto:nth-child(1) .card-1-header.panel-1_0{display:flex;padding:0px 10px 0px 10px;}
+.card-1.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1){}
+.card-1.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .card-1-header-icon{color:#838ea0;display:inline-block;font-size:20px;}
+.card-1.panel-0_1 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .card-1-header-text{display:inline-block;font-size:16px;padding:0px 0px 0px 8px;}
+.card-1.panel-0_1 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1){}
+.card-1.panel-0_1 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1) .card-1-content-text{display:inline-block;width:100%;}
+.card-1.panel-0_1 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(2){}
+.card-1.panel-0_1 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(2) .card-1-content-value{display:inline-block;text-align:right;width:100%;}
+.card-1.panel-0_2{display:flex;}
+.card-1.panel-0_2 > .col-auto:nth-child(1){}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .card-1-content-ul.panel-1_1{display:flex;padding:0px 10px 0px 10px;}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .card-1-header.panel-1_0{display:flex;padding:0px 0px 0px 10px;}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1){}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .card-1-header-icon{color:#838ea0;display:inline-block;font-size:20px;}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .panel-1_0 > .col-auto:nth-child(1) .card-1-header-text{display:inline-block;font-size:16px;padding:0px 0px 0px 8px;}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1){}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1) .card-1-content-li.panel-2_0{display:flex;}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1) .card-1-content-li.panel-2_1{display:flex;}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1) .panel-2_0 > .col-auto:nth-child(1){}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1) .panel-2_0 > .col-auto:nth-child(1) .card-1-content-text{display:inline-block;width:100%;}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1) .panel-2_0 > .col-auto:nth-child(2){}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1) .panel-2_0 > .col-auto:nth-child(2) .card-1-content-value{display:inline-block;text-align:right;width:100%;}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1) .panel-2_1 > .col-auto:nth-child(1){}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1) .panel-2_1 > .col-auto:nth-child(1) .card-1-content-text{display:inline-block;width:100%;}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1) .panel-2_1 > .col-auto:nth-child(2){}
+.card-1.panel-0_2 > .col-auto:nth-child(1) .panel-1_1 > .col-auto:nth-child(1) .panel-2_1 > .col-auto:nth-child(2) .card-1-content-value{display:inline-block;text-align:right;width:100%;}
+.header.panel-0_0{display:flex;min-height:60px;}
+.header.panel-0_0 > .col-auto:nth-child(1){}
+.header.panel-0_0 > .col-auto:nth-child(2){}
+.header.panel-0_0 > .col-auto:nth-child(2) .header-mid.panel-1_0{display:flex;}
+.header.panel-0_0 > .col-auto:nth-child(2) .panel-1_0 > .col-auto:nth-child(1){}
+.header.panel-0_0 > .col-auto:nth-child(2) .panel-1_0 > .col-auto:nth-child(1) .header-mid-desc{display:inline-block;text-align:center;width:100%;}
+.header.panel-0_0 > .col-auto:nth-child(2) .panel-1_0 > .col-auto:nth-child(1) .header-mid-price{color:#3c99e6;display:inline-block;font-size:24px;text-align:center;width:100%;}
+.header.panel-0_0 > .col-auto:nth-child(3){}
+.header.panel-0_0 > .col-auto:nth-child(3) .header-mid-img{display:inline-block;width:60%;}

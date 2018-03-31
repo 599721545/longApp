@@ -1,0 +1,49 @@
+.mui-bar-nav~.mui-content {
+	padding-top: 54px;
+}
+
+.mui-table-view {
+	background-color: #efeff4;
+}
+
+.mui-table-view:before {
+	background-color: transparent;
+}
+
+.mui-table-view-cell {
+	margin: 10px 15px;
+	background-color: #FFFFFF;
+	box-shadow: 0 0 5px #ddd;
+	border-radius: 2px;
+}
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	font-size: 14px;
+}
+
+.mui-table-view-cell:after {
+	background-color: transparent;
+}
+
+.mui-navigate-right:before {
+	content: " ";
+	height: 25px;
+	width: 2px;
+	display: block;
+	position: absolute;
+	top: 9px;
+	left: 2px;
+	background-color: #1eacf0;
+}
+
+.mui-table-view:after {
+	height: 0;
+}
+
+.mui-content .head {
+	margin: 5px 15px;
+}
+
+.mui-content .head:first-child {
+	margin-top: 10px;
+}

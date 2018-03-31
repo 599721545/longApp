@@ -1,0 +1,56 @@
+body {
+	height: 100%;
+	background: #FFFFFF;
+}
+h5 {
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.mui-demo-container {
+	background-color: #fff;
+	padding: 10px 15px;
+}
+
+.mui-btn-block {
+	padding: 5px 0;
+}
+
+#demo5 .mui-progressbar {
+	margin: 15px 10px;
+}
+
+.mui-progressbar-success span {
+	background-color: #1EACF0;
+}
+
+.mui-progressbar-warning span {
+	background-color: #1EACF0;
+}
+
+.mui-progressbar-danger span {
+	background-color: #1EACF0;
+}
+
+.mui-progressbar-royal span {
+	background-color: #1EACF0;
+}
+
+
+/*Android平台使用父子webview，因此需要修改顶部进度条的显示位置*/
+
+.mui-plus.mui-android>.mui-progressbar {
+	top: 0
+}
+
+.mui-btn-blue, .mui-btn-primary, input[type=submit] {
+	    border: 1px solid #1EACF0;
+}
+
+.mui-btn-outlined.mui-btn-blue, .mui-btn-outlined.mui-btn-primary {
+	color: #1EACF0;
+}
+
+span {
+	color: #1EACF0;
+}

@@ -1,0 +1,81 @@
+/* 设计器预览引入的公共样式文件，为了美化部分组件，开发时建议复制到app中引用 */
+html,body{
+	background-color: #fff;
+	height: 100%;
+}
+.mui-content{
+	background-color: #fff;
+	height: 100%;
+}
+.panel-auto{display:flex;flex-wrap: nowrap;width: 100%;min-height: 40px;padding: 3px 0 0 0;background: #fff;border-bottom: 1px solid #ECECEC;position: relative;}
+.panel-auto:last-child{ border-bottom: 0px solid #ECECEC;}
+ .panel-auto.mui-card{width: auto;margin:0px 10px 10px 10px;}
+.col-auto{display:flex;flex-wrap: wrap;align-items: center; font-size: 14px; font-family: "microsoft yahei";}
+.mui-input-row{width:100%;}  
+.panel-auto .col-auto .mui-input-clear,.panel-auto .col-auto select,.panel-auto .col-auto textarea{color:#808080;font-size: 14px;font-family: "microsoft yahei";border: none;margin-bottom: 0;/* padding: 0 15px; *//* height: 40px; */}
+.panel-auto .col-auto > label{font-size: 12px;color: #666;/* padding: 0 15px; *//* font-family: "microsoft yahei";font-size: 14px;line-height: 40px;margin-bottom: 0px; */}
+.panel-auto .col-auto > p{padding: 0 15px;color: #666;font-family: "microsoft yahei";font-size: 14px;line-height: 40px;margin-bottom: 0px;}
+.panel-auto .col-auto > img[src=""]{min-height:50px;min-width:50px;background-color: #ddd;}
+.panel-auto .col-auto > img[src=""]:before{content: "no image";display: block;font-size: 12px;line-height: 25px;height: 50px;width: 50px;text-align: center;}
+.panel-auto .col-auto > textarea{height:auto;min-height: 100px;padding: 10px 0;}
+.panel-auto .col-auto .fa{ color: #3890f4;font-size: 18px;margin-bottom: 4px;}
+.panel-auto .col-auto > label.isMust{ font-size: 12px;color: #3890f4;}
+.panel-auto .col-auto > label.tip{ color: #888;}
+.panel-auto .col-auto > label.isOver{color: #3890f4;}
+.mui-input-group {font-size:14px;color:#9D9D9D;}
+.mui-input-group input,.mui-input-group select{font-size:14px;color:#9D9D9D;}
+.mui-input-group .mui-input-row:after{  background-color:#ededed ;}
+.phone-image{ min-width: 100px; min-height: 100px;}
+/*placeholderæ ·å¼*/
+.mui-input-group input::-webkit-input-placeholder{font-size:14px;color:#9D9D9D;}   
+.mui-input-group input:-moz-placeholder{font-size:14px;color:#9D9D9D;}                  
+.mui-input-group input::-moz-placeholder{font-size:14px;color:#9D9D9D;}                
+.mui-input-group input:-ms-input-placeholder{font-size:14px;color:#9D9D9D;}  
+.mui-input-group .mui-input-row{ padding: 6px 0; height: auto;}         
+
+[data-ripple="ripple"]:before {
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+   background-color: rgba(0,0,0,0);
+   transition: all .5s;
+}
+
+[data-ripple="ripple"]:active:before {
+   background-color: rgba(0,0,0,0.1);
+}
+
+/* ripple  水波纹 */
+[data-ripple="ripple"] {
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-webkit-user-select:none;
+    -ms-user-select:none;
+}
+
+[data-ripple="ripple"] .ripple {
+    display: block;    
+    width: 100%;
+    height: 100%;
+    border-radius:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 888;    
+    background: rgba(255, 255, 255, .5);
+    transform: scale(0);
+    animation: ripple .6s 0s linear;
+}
+
+@keyframes ripple {
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+/* ripple  水波纹   end*/

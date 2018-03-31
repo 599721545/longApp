@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/list.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="head">
+				显示
+			</div>
+			<ul class="mui-table-view">
+				<li id="timeline" name="timeline.html" class="mui-table-view-cell">
+					<a class="mui-navigate-right">时间轴动画</a>
+				</li>
+				<li id="tanchu" name="tanchu.html" class="mui-table-view-cell">
+					<a class="mui-navigate-right">搜索框动画</a>
+				</li>
+			</ul>
+			<div class="head">
+				加载
+			</div>
+			<ul class="mui-table-view">
+				
+				
+				<li id="show1" name="show-animation1.html" class="mui-table-view-cell">
+					<a class="mui-navigate-right">加载动画-中心淡出</a>
+				</li>
+				<li id="show1-1" name="show-animation1-1.html" class="mui-table-view-cell">
+					<a class="mui-navigate-right">加载动画-中心淡出-延时</a>
+				</li>
+				<li id="show1-2" name="show-animation1-3.html" class="mui-table-view-cell">
+					<a class="mui-navigate-right">加载动画-中心淡出-按钮</a>
+				</li>
+				<li id="show2" name="show-animation2.html" class="mui-table-view-cell">
+					<a class="mui-navigate-right">加载动画-下滑入</a>
+				</li>
+				<li id="show3" name="show-animation3.html" class="mui-table-view-cell">
+					<a class="mui-navigate-right">加载动画-上滑入</a>
+				</li>
+				<li id="show4" name="show-animation4.html" class="mui-table-view-cell">
+					<a class="mui-navigate-right">加载动画-左滑入</a>
+				</li>
+				<li id="show5" name="show-animation5.html" class="mui-table-view-cell">
+					<a class="mui-navigate-right">加载动画-右滑入</a>
+				</li>
+				<li id="processbar" name="progressbar.html" class="mui-table-view-cell">
+					<a class="mui-navigate-right">进度条</a>
+				</li>
+				<!--<li id="refresh" name="refresh.html" class="mui-table-view-cell">
+					<a class="mui-navigate-right">下拉刷新/上拉加载</a>
+				</li>-->
+			</ul>
+			
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../../../js/base/common/dyheader.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/base/resolve/resolve-js.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+
+			mui.plusReady(function() {
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+			});
+			mui('body').on('tap', 'li', function() {
+				var id = this.id;
+				var name = this.attributes[1].nodeValue;
+				if(id.lastIndexOf('show') == -1 && id.lastIndexOf('tanchu') == -1) {
+					plus.screen.lockOrientation("portrait-primary");
+					dyheader.init(name, id);
+				} else if(id == 'show1') {
+					var w = plus.webview.create(name, id);
+					plus.webview.show(w, 'zoom-fade-out', 1000, {
+						acceleration: 'auto'
+					});
+				} else if(id == 'show1-1') {
+					var w = plus.webview.create(name, id);
+					plus.webview.show(w, 'none', 1000, {
+						acceleration: 'auto'
+					});
+				}else if(id == 'show1-2') {
+					var w = plus.webview.create(name, id);
+					plus.webview.show(w, 'none', 1000, {
+						acceleration: 'auto'
+					});
+				}else if(id == 'show2') {
+					var w = plus.webview.create(name, id);
+					plus.webview.show(w, 'slide-in-bottom', 1000, {
+						acceleration: 'auto'
+					});
+				} else if(id == 'show3') {
+					var w = plus.webview.create(name, id);
+					plus.webview.show(w, 'slide-in-top', 1000, {
+						acceleration: 'auto'
+					});
+				} else if(id == 'show4') {
+					var w = plus.webview.create(name, id);
+					plus.webview.show(w, 'slide-in-left', 1000, {
+						acceleration: 'auto'
+					});
+				} else if(id == 'tanchu') {
+					var w = plus.webview.create(name, id);
+					plus.webview.show(w, 'slide-in-right', 1000, {
+						acceleration: 'auto'
+					});
+				} else {
+					var w = plus.webview.create(name, id);
+					plus.webview.show(w, 'slide-in-right', 600, {
+						acceleration: 'auto'
+					});
+				}
+			});
+
+			function back(id) {
+				var w = plus.webview.getWebviewById(id);
+				w.close();
+			}
+		</script>
+	</body>
+
+</html>

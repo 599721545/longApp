@@ -1,0 +1,74 @@
+.city-popover {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+
+.city-popover .city-popover-items {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: -1px -1px 10px 2px #989898;
+}
+
+.city-popover .mui-table-view.city-lv li {
+}
+
+.city-popover .city-popover-items .mui-table-view-cell.city-back {
+    position: absolute;
+    top: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: #007AFF;
+    color: #FFFFFF;
+    z-index: 3;
+    padding: 0px;
+}
+
+.city-popover .city-popover-items.city-lv .mui-table-view-cell.city-back span {
+    width: 50%;
+    float: right;
+    padding: 11px 15px;
+    transition: background-color 0.3s;
+}
+
+.city-popover .city-popover-items.city-lv .mui-table-view-cell.city-back span:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.city-popover .city-popover-items.city-lv .mui-table-view-cell.city-back .back {
+    float: left;
+    text-align: left;
+}
+
+.city-popover .city-popover-items.city-lv .mui-table-view-cell.city-back .close {
+    text-align: right;
+}
+
+.city-popover .mui-table-view {
+    padding-top: 40px;
+    background-color: #ffffff;
+}
+
+.city-popover .city-lv1 {
+}
+
+.city-popover .city-lv2 {
+    transition: all 0.35s ease-in-out;
+    opacity: 0;
+    left: 100%;
+}
+
+.city-popover .city-lv3 {
+    transition: all 0.35s ease-in-out;
+    opacity: 0;
+    left: 100%;
+}
+
+.city-popover.mui-popover .mui-scroll-wrapper {
+    background-color: #FFFFFF;
+}

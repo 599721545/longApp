@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/list.css" />
+	
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="head">
+				普通
+			</div>
+			<ul class="mui-table-view">
+				<li  class="mui-table-view-cell">
+					<a id="header1" class="mui-navigate-right" >文字+返回按钮</a>
+				</li>
+				<li  class="mui-table-view-cell">
+					<a id="header2" class="mui-navigate-right" >文字+返回、菜单按钮</a>
+				</li>
+			</ul>
+			<div class="head">
+				动态
+			</div>
+			<ul class="mui-table-view list">
+				<li  class="mui-table-view-cell">
+					<a id="dyheader1" class="mui-navigate-right" rel="dyheader1.html">滚动变化</a>
+				</li>
+				<li  class="mui-table-view-cell">
+					<a id="dyheader2" class="mui-navigate-right" rel="dyheader2.html">四个按钮</a>
+				</li>
+				<li  class="mui-table-view-cell">
+					<a  id="dyheader3" class="mui-navigate-right" rel="dyheader3.html">两个按钮</a>
+				</li>
+			</ul>
+			
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../../../js/base/common/dyheader.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/base/resolve/resolve-js.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+
+			mui.plusReady(function() {
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+
+			document.getElementById("header1").addEventListener('tap',function(){
+				plus.screen.lockOrientation("portrait-primary");
+				var w = plus.webview.create("header1.html", 'header1');
+				plus.webview.show(w, 'zoom-fade-out', 600, {
+					acceleration: 'auto'
+				});
+			});
+			
+			document.getElementById("header2").addEventListener('tap',function(){
+				plus.screen.lockOrientation("portrait-primary");
+				var w = plus.webview.create("header2.html", 'header2');
+				plus.webview.show(w, 'zoom-fade-out', 600, {
+					acceleration: 'auto'
+				});
+			});
+				
+			mui('.mui-table-view.list').on("tap", "a", function() {
+					var id = this.id;
+					var rel = this.rel;
+					dyheader.init(rel,id);
+			});
+				
+			});
+
+			function back(id) {
+				var w = plus.webview.getWebviewById(id);
+				w.close();
+			}
+		</script>
+	</body>
+
+</html>

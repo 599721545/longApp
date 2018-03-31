@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../../../css/third_css/font-awesome.css">
+		
+		<link rel="stylesheet" href="../../control/css/my-app.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<script type="text/javascript" src="../js/resolve/assignment-js.js"></script>
+		<script type="text/javascript" src="../js/resolve/resolve-js.js"></script>
+		<script type="text/javascript" src="../js/validate/data-validate.js"></script>
+		<script type="text/javascript" src="../js/resolve/resolve-js.js"></script>
+		<script type="text/javascript" src="../js/validate/custom.js"></script>
+	</head>
+
+	<body>
+		<!--<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">表单解析示例</h1>
+		</header>-->
+		<div id="info"></div>
+		<script src="../js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: true
+			});
+			mui.plusReady(function() {
+				plus.webview.currentWebview().setStyle({
+					scrollIndicator: 'none'
+				});
+
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+								var map = {};
+								var list = [];
+				
+								var demo = {
+									"demoName": "test222",
+									"demoDate": "2017-01-01",
+									"demoAmt": "200000"
+								};
+								var demo1 = {
+									"demoName": "test1",
+									"demoDate": "2017-01-01",
+									"demoAmt": "200000"
+								};
+								var demo2 = {
+									"demoName": "test2",
+									"demoDate": "2017-01-01",
+									"demoAmt": "200000"
+								};
+								list.push(demo);
+								list.push(demo1);
+								list.push(demo2);
+				
+								map["demo"] = list;
+				resolve.getHtml("formme9", "#info", function(obj) {
+
+					dataValidate.init({
+						elem: obj,
+						//						parm: {
+//							"click": ["test"]
+//						},
+						domEvent:{
+							"fieldname":{
+											"click":["test"]
+										}
+						}
+					});
+				});
+
+			})
+			//重写实时校验的回调方法，第一个参数当前校验dom对象，第二个参数校验返回的信息，第三个参数，当前调用的方法名称
+			dataValidate.callback= function(obj, msg,funcName){
+				console.log(msg,funcName);
+			}
+			function denglu(){
+				console.log("111");
+				dataValidate.formValidate({
+					elem: "#info",
+					callback:function(msg){
+						console.log(msg);
+					}
+				});
+			}
+			//添加自定义事件监听
+			//window.addEventListener('setSomeData', function(event) {
+
+			//});
+		</script>
+	</body>
+
+</html>

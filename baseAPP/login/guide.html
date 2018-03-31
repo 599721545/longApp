@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello DRE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/custom/my-app.css" />
+		<link rel="stylesheet" type="text/css" href="../css/custom/guide.css"/>
+	</head>
+
+	<body class="guide">
+		<div id="slider" class="mui-slider mui-fullscreen">
+			<div class="mui-slider-group">
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<div class="item-logo">
+						<div id="skip1" class="mui-btn mui-btn-outlined skip">跳  过</div>
+						<img id="gif11" src="../css/custom/img/guide/page1.gif" height="100%" width="100%" />
+					</div>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<div class="item-logo">
+						<img id="gif22" src="../css/custom/img/guide/page2-1.gif" height="100%" width="100%" />
+					</div>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<div class="item-logo">
+						<img id="gif33" src="../css/custom/img/guide/page3-1.gif" height="100%" width="100%" />
+					</div>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<div class="item-logo">
+						<div class="animate">
+							<div style="color:#2590d5;border-color:#2590d5;" id='close' class="mui-btn mui-btn-warning mui-btn-outlined">立 即 体 验</div>
+						</div>
+						<img id="gif44" src="../css/custom/img/guide/page4.gif" height="100%" width="100%" />
+					</div>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div id="gif1" class="mui-indicator mui-active"></div>
+				<div id="gif2" class="mui-indicator"></div>
+				<div id="gif3" class="mui-indicator"></div>
+				<div id="gif4" class="mui-indicator"></div>
+			</div>
+		</div>
+		<script src="../js/mui/mui.min.js"></script>
+		<script>
+			mui.back = function() {};
+			var appVersion = 0;
+			mui.plusReady(function() {
+				if(mui.os.ios) {
+					plus.navigator.setFullscreen(true);
+				}
+				plus.navigator.closeSplashscreen();
+
+				plus.runtime.getProperty(plus.runtime.appid, function(wgtinfo) {
+					appVersion = wgtinfo.version; //不用云打包依然有效。
+				});
+				var option = {
+					url: 'http://' + serverIp + '/app_base/census/setDownCountAjax',
+					data: {
+						appName: "leaseCarAPP"
+					},
+					success: function(data) {},
+					error: function(a, b, c) {},
+					dataType: 'json',
+					type: 'get',
+					async: true
+					//false同步
+				};
+				//mui.ajax(option);
+
+			});
+
+			/*	document.on('slide','mui-indicator',function(){
+				console.log(this.id);
+			});*/
+
+			//立即体验按钮点击事件
+			document.getElementById("close").addEventListener('tap', function(event) {
+				plus.storage.setItem("lauchFlag", "true");
+				plus.storage.setItem("localVersion", appVersion); //plus.runtime.version//在manifest.json中配置时需要提交到App云端打包后才能生效，所以在真机运行的时候获取的是HBuilder 5+ Runtime的版本号8.8.0。
+				plus.navigator.setFullscreen(false);
+				plus.webview.currentWebview().close();
+			}, false);
+
+			document.getElementById("skip1").addEventListener('tap', function(event) {
+				plus.storage.setItem("lauchFlag", "true");
+				plus.storage.setItem("localVersion", appVersion); //plus.runtime.version//在manifest.json中配置时需要提交到App云端打包后才能生效，所以在真机运行的时候获取的是HBuilder 5+ Runtime的版本号8.8.0。
+				plus.navigator.setFullscreen(false);
+				plus.webview.currentWebview().close();
+			}, false);
+			//图片切换时，触发动画
+			document.querySelector('.mui-slider').addEventListener('slide', function(event) {
+				//注意slideNumber是从0开始的；
+				setTimeout(function() {
+					var gif = mui('.mui-indicator');
+					var i = 0;
+					for(i in gif) {
+						if(gif[i].className == 'mui-indicator mui-active') {
+							var id = gif[i].id;
+							if(gif[i].id == "gif1") {
+								mui("#gif11")[0].src = '../css/custom/img/guide/page1.gif';
+							}
+							if(gif[i].id == "gif2") {
+								mui("#gif22")[0].src = '../css/custom/img/guide/page2.gif';
+							}
+							if(gif[i].id == "gif3") {
+								mui("#gif33")[0].src = '../css/custom/img/guide/page3.gif';
+							}
+							if(gif[i].id == "gif4") {
+								mui("#gif44")[0].src = '../css/custom/img/guide/page4.gif';
+							}
+						}
+					}
+				}, 200);
+
+			});
+		</script>
+	</body>
+
+</html>

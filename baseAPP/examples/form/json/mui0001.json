@@ -1,0 +1,417 @@
+{
+	"formId": "mui0001",
+	"formName": "表单名称mui0001",
+	"formDesc": "表单描述666",
+	"panels": [
+		{
+			"animate": "animation-name:bounce;animation-fill-mode:both;animation-duration:500ms;animation-delay:100ms;animation-iteration-count:1;listStep:100",
+			"beanName": "demo",
+			"desStyle": "",
+			"desStyleStr": "",
+			"domClass": "mui-card",
+			"onclick": "",
+			"style": "",
+			"type": "list",
+			"cols": [
+				{
+					"col": "100",
+					"gridStyle": "",
+					"panels": [
+						{
+							"animate": "",
+							"beanName": "",
+							"desStyle": "text-align:right;:undefined",
+							"desStyleStr": "align-right:true;:undefined;|align-right:true;:undefined",
+							"domClass": "mui-card-header",
+							"onclick": "",
+							"style": "",
+							"type": "form",
+							"cols": [
+								{
+									"col": "50",
+									"gridStyle": "",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "string",
+											"desStyle": "color:#e8275e;font-weight:bold;display:inline-block;:undefined;font-size:16px;padding:;display:inline-block",
+											"desStyleStr": "color:#e8275e;font-weight:true;:undefined;font-size:16;padding:|padding:;:undefined",
+											"domClass": "",
+											"fieldName": "demoName",
+											"initValue": "甘肃肃瑞建材有限公司",
+											"labelName": "",
+											"maxLength": "0",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "cif-nanme",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Label",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								},
+								{
+									"col": "50",
+									"gridStyle": "",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "string",
+											"desStyle": "display:inline-block;:undefined;color:#d6d6d6;text-align:;display:inline-block",
+											"desStyleStr": "color:#d6d6d6;align-right:false;:undefined|color:#d6d6d6;align-right:false;:undefined",
+											"domClass": "",
+											"fieldName": "demoDate",
+											"initValue": "2017-02-19",
+											"labelName": "",
+											"maxLength": "0",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "cif-date",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Label",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"animate": "",
+							"beanName": "",
+							"desStyle": "",
+							"desStyleStr": ":undefined;|:undefined",
+							"domClass": "mui-card-content",
+							"onclick": "",
+							"style": "",
+							"type": "form",
+							"cols": [
+								{
+									"col": "100",
+									"gridStyle": "",
+									"panels": [
+										{
+											"animate": "",
+											"beanName": "",
+											"desStyle": "text-align:;min-height:30px;:undefined",
+											"desStyleStr": "align-left:false;min-height:30px;:undefined;|align-left:false;min-height:30px;:undefined",
+											"domClass": "",
+											"onclick": "",
+											"style": "",
+											"type": "form",
+											"cols": [
+												{
+													"col": "100",
+													"gridStyle": "",
+													"panels": [],
+													"tags": [
+														{
+															"animate": "",
+															"dataType": "0",
+															"desStyle": "display:inline-block;:undefined;display:inline-block",
+															"desStyleStr": ":undefined|:undefined",
+															"domClass": "",
+															"fieldName": "",
+															"initValue": "mui-icon mui-icon-home",
+															"labelName": "",
+															"maxLength": "0",
+															"mustInput": "false",
+															"onblur": "",
+															"onchange": "",
+															"onclick": "",
+															"onfocus": "",
+															"onkeydown": "",
+															"onkeypress": "",
+															"onkeyup": "",
+															"optionArray": "",
+															"para": "",
+															"placeholder": "请输入",
+															"readonly": "false",
+															"style": "",
+															"tagType": "Icon",
+															"type": "text",
+															"unit": ""
+														},
+														{
+															"animate": "",
+															"dataType": "0",
+															"desStyle": "display:inline-block;:undefined;font-size:14px;display:inline-block",
+															"desStyleStr": "font-size:14px;:undefined|font-size:14px;:undefined",
+															"domClass": "",
+															"fieldName": "",
+															"initValue": "不动产抵押",
+															"labelName": "",
+															"maxLength": "0",
+															"mustInput": "false",
+															"onblur": "",
+															"onchange": "",
+															"onclick": "",
+															"onfocus": "",
+															"onkeydown": "",
+															"onkeypress": "",
+															"onkeyup": "",
+															"optionArray": "",
+															"para": "cif-type",
+															"placeholder": "请输入",
+															"readonly": "false",
+															"style": "",
+															"tagType": "Label",
+															"type": "text",
+															"unit": ""
+														}
+													]
+												}
+											]
+										},
+										{
+											"animate": "",
+											"beanName": "",
+											"desStyle": "text-align:center;min-height:;:undefined",
+											"desStyleStr": "align-center:true;min-height:;:undefined;|align-center:true;min-height:;:undefined",
+											"domClass": "",
+											"onclick": "",
+											"style": "padding:10px 0",
+											"type": "form",
+											"cols": [
+												{
+													"col": "25",
+													"gridStyle": "",
+													"panels": [],
+													"tags": [
+														{
+															"animate": "",
+															"dataType": "string",
+															"desStyle": "display:inline-block;:undefined;display:inline-block",
+															"desStyleStr": ":undefined|:undefined",
+															"domClass": "",
+															"fieldName": "",
+															"initValue": "申请金额",
+															"labelName": "",
+															"maxLength": "0",
+															"mustInput": "false",
+															"onblur": "",
+															"onchange": "",
+															"onclick": "",
+															"onfocus": "",
+															"onkeydown": "",
+															"onkeypress": "",
+															"onkeyup": "",
+															"optionArray": "",
+															"para": "app-amt-label",
+															"placeholder": "请输入",
+															"readonly": "false",
+															"style": "",
+															"tagType": "Label",
+															"type": "text",
+															"unit": ""
+														}
+													]
+												},
+												{
+													"col": "25",
+													"gridStyle": "",
+													"panels": [],
+													"tags": [
+														{
+															"animate": "",
+															"dataType": "double",
+															"desStyle": "display:inline-block;:undefined;color:#f51d1d;display:inline-block",
+															"desStyleStr": "color:#f51d1d;:undefined|color:#f51d1d;:undefined",
+															"domClass": "",
+															"fieldName": "demoAmt",
+															"initValue": "12000000",
+															"labelName": "",
+															"maxLength": "0",
+															"mustInput": "false",
+															"onblur": "",
+															"onchange": "",
+															"onclick": "",
+															"onfocus": "",
+															"onkeydown": "",
+															"onkeypress": "",
+															"onkeyup": "",
+															"optionArray": "",
+															"para": "app-amt",
+															"placeholder": "请输入",
+															"readonly": "false",
+															"style": "",
+															"tagType": "Label",
+															"type": "text",
+															"unit": ""
+														}
+													]
+												},
+												{
+													"col": "25",
+													"gridStyle": "",
+													"panels": [],
+													"tags": [
+														{
+															"animate": "",
+															"dataType": "string",
+															"desStyle": "display:inline-block;:undefined;color:#9c9c9c;display:inline-block",
+															"desStyleStr": "color:#9c9c9c;:undefined|color:#9c9c9c;:undefined",
+															"domClass": "",
+															"fieldName": "",
+															"initValue": "执行利率",
+															"labelName": "",
+															"maxLength": "0",
+															"mustInput": "false",
+															"onblur": "",
+															"onchange": "",
+															"onclick": "",
+															"onfocus": "",
+															"onkeydown": "",
+															"onkeypress": "",
+															"onkeyup": "",
+															"optionArray": "",
+															"para": "app-pre-label",
+															"placeholder": "请输入",
+															"readonly": "false",
+															"style": "",
+															"tagType": "Label",
+															"type": "text",
+															"unit": ""
+														}
+													]
+												},
+												{
+													"col": "25",
+													"gridStyle": "",
+													"panels": [],
+													"tags": [
+														{
+															"animate": "",
+															"dataType": "string",
+															"desStyle": "display:inline-block;:undefined;color:#1db1f5;display:inline-block",
+															"desStyleStr": "color:#1db1f5;:undefined|color:#1db1f5;:undefined",
+															"domClass": "",
+															"fieldName": "",
+															"initValue": "7.0%",
+															"labelName": "",
+															"maxLength": "0",
+															"mustInput": "false",
+															"onblur": "",
+															"onchange": "",
+															"onclick": "",
+															"onfocus": "",
+															"onkeydown": "",
+															"onkeypress": "",
+															"onkeyup": "",
+															"optionArray": "",
+															"para": "app-pre",
+															"placeholder": "请输入",
+															"readonly": "false",
+															"style": "",
+															"tagType": "Label",
+															"type": "text",
+															"unit": ""
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"animate": "",
+							"beanName": "",
+							"desStyle": "text-align:left;:undefined",
+							"desStyleStr": "align-left:true;:undefined;|align-left:true;:undefined",
+							"domClass": "card-content-inner-footer",
+							"onclick": "",
+							"style": "",
+							"type": "form",
+							"cols": [
+								{
+									"col": "100",
+									"gridStyle": "",
+									"panels": [],
+									"tags": [
+										{
+											"animate": "",
+											"dataType": "string",
+											"desStyle": "display:inline-block;:undefined;color:#b8b8b8;display:inline-block",
+											"desStyleStr": "color:#b8b8b8;:undefined|color:#b8b8b8;:undefined",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "客户经理",
+											"labelName": "",
+											"maxLength": "0",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "cif-manager-label",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Label",
+											"type": "text",
+											"unit": ""
+										},
+										{
+											"animate": "",
+											"dataType": "string",
+											"desStyle": "display:inline-block;:undefined;display:inline-block",
+											"desStyleStr": ":undefined|:undefined",
+											"domClass": "",
+											"fieldName": "",
+											"initValue": "法务总监证券机构",
+											"labelName": "",
+											"maxLength": "0",
+											"mustInput": "false",
+											"onblur": "",
+											"onchange": "",
+											"onclick": "",
+											"onfocus": "",
+											"onkeydown": "",
+											"onkeypress": "",
+											"onkeyup": "",
+											"optionArray": "",
+											"para": "cif-manager-name",
+											"placeholder": "请输入",
+											"readonly": "false",
+											"style": "",
+											"tagType": "Label",
+											"type": "text",
+											"unit": ""
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

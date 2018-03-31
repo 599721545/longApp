@@ -1,0 +1,26 @@
+{
+		"appId": "100001170810100184",
+		"appNo": "100001170810100184",
+		"applyAmt": "1111111.0",
+		"assignee": "0007",
+		"cifName": "李诚成",
+		"cifNo": "2010000421",
+		"createTime": 1504508051153,
+		"description": "法务总监",
+		"executionId": "process_20173308393826.9057",
+		"id": "9109",
+		"ifReview": "1",
+		"opNo": "0001",
+		"prdName": "个人房贷",
+		"wf_app_id": "100001170810100184",
+		"wf_operator": "0001",
+		"date":"2017-02-12",
+		"vouType": "质押",
+		"repayType": "按期还息，到期还本",
+        "title": "贷款申请信息",
+        "totalDays": "365"
+	}
+
+
+
+

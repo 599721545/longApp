@@ -1,0 +1,775 @@
+{
+    "form": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "测试表单",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#000",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('form')"
+            },
+            {
+                "color": "#000",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "right",
+                "fontWeight": "normal",
+                "fontSize": "20px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "click(item)"
+            }
+        ]
+    },
+    "help-center": {
+        "autoBackButton": false,
+        "backgroundColor": "#3890F4",
+        "titleText": "帮助中心",
+        "titleColor": "#FFFFFF",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#FFFFFF",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('help-center')"
+            }
+        ],
+        "splitLine": "null"
+    },
+    "timeline": {
+        "autoBackButton": false,
+        "backgroundColor": "#FFFFFF",
+        "titleText": "时间轴动画",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('timeline')"
+            }
+        ]
+    },
+    "yuqi": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "逾期总额/笔数",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('yuqi')"
+            }
+        ]
+    },
+    "cityselect": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "区域选择",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('cityselect')"
+            }
+        ]
+    },
+    "huankuan": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "还款历史",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('huankuan')"
+            }
+        ]
+    },
+    "system": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "系统/控件",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('system')"
+            }
+        ]
+    },
+    "dongxiao": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "动画效果",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('dongxiao')"
+            }
+        ]
+    },
+    "caozuo": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "操作方式",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('caozuo')"
+            }
+        ]
+    },
+    "api": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "API库",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('api')"
+            }
+        ]
+    },
+    "biaotou": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "标题栏",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('biaotou')"
+            }
+        ]
+    },
+    "changyong": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "常用场景",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('changyong')"
+            }
+        ]
+    },
+    "chart": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "统计分析",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('chart')"
+            }
+        ]
+    },
+    "refresh": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "下拉刷新/上拉加载",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('refresh')"
+            }
+        ]
+    },
+    "processbar": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "进度条",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('processbar')"
+            }
+        ],
+        "progress": {
+            "color": "#1EACF0",
+            "height": "2px"
+        }
+    },
+    "loading": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "加载等待",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('loading')"
+            }
+        ]
+    },
+    "change-list": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "滑动列表",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('change-list')"
+            }
+        ]
+    },
+    "change-tab": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "滑动选项卡",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('change-tab')"
+            }
+        ]
+    },
+    "suspend": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "悬浮球",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('suspend')"
+            }
+        ]
+    },
+    "buttons": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "加载按钮",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('buttons')"
+            }
+        ]
+    },
+    "ripples": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "水波纹",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('ripples')"
+            }
+        ]
+    },
+    "push": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "本地消息推送",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('push')"
+            }
+        ]
+    },
+    "geolocation": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "地理定位",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('geolocation')"
+            }
+        ]
+    },
+    "device": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "设备信息",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('device')"
+            }
+        ]
+    },
+    "record": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "录音/播放",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('record')"
+            }
+        ]
+    },
+    "scan": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "二维码扫描/摄像头",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('scan')"
+            }
+        ]
+    },
+    "dyheader1": {
+        "autoBackButton": false,
+        "backgroundColor": "#1EACF0",
+        "titleText": "动态表头1",
+        "titleColor": "#FFFFFF",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#FFFFFF",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('dyheader1')"
+            }
+        ],
+        "type": "transparent",
+        "coverage": "250px"
+    },
+    "dyheader2": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "动态表头2",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('dyheader2')"
+            },
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "20px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "test2(item)"
+            },
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "right",
+                "fontSize": "20px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "test2(item)"
+            },
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "right",
+                "fontSize": "20px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "test2 (item)"
+            }
+        ]
+    },
+    "dyheader3": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "动态表头3",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('dyheader3')"
+            },
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "right",
+                "fontSize": "20px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": ""
+            }
+        ]
+    },
+    "cengdie": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "页面组合",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('cengdie')"
+            }
+        ]
+    },
+    "cehua-main": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "侧滑",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('cehua-main')"
+            }
+        ]
+    },
+    "lock": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "解锁",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('lock')"
+            }
+        ]
+    },
+    "kongjian": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "控件库",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('kongjian')"
+            }
+        ]
+    },
+    "shenqing": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "申请列表",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('shenqing')"
+            }
+        ]
+    },
+    "pick": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "picker（按钮）",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('pick')"
+            }
+        ]
+    },
+    "center": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "个人中心",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('center')"
+            }
+        ]
+    },
+    "kehu": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "客户中心",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('kehu')"
+            }
+        ]
+    },
+    "shenpi": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "审批列表",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('shenpi')"
+            }
+        ]
+    },
+    "credit": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "审批列表",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('credit')"
+            }
+        ]
+    },
+    "offcanvas-drag-left": {
+        "autoBackButton": false,
+        "backgroundColor": "#fff",
+        "titleText": "筛选",
+        "titleColor": "#000000",
+        "titleSize": "20px",
+        "buttons": [
+            {
+                "color": "#1EACF0",
+                "colorPressed": "rgb(25, 178, 241,1)",
+                "float": "left",
+                "fontSize": "24px",
+                "fontSrc": "_www/css/third_css/fonts/fontawesome-webfont.ttf",
+                "text": "",
+                "click": "back('offcanvas-drag-left')"
+            }
+        ]
+    }
+}

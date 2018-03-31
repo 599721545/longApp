@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<title></title>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script src="../js/record.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="../css/record.css"/>
+	</head>
+
+	<body>
+		<div id="dcontent" class="dcontent">
+			<br/>
+			<div class="button" onclick="startRecord()">开始录音</div>
+			<div class="button" onclick="startPlay('_www/examples/equipment/css/mp3/friendship.mp3')">播放音乐</div>
+			<br/>
+			<!-- History list -->
+			<ul id="history" class="dlist" style="text-align:left;">
+				<li id="empty" class="ditem-empty">无历史记录</li>
+			</ul>
+			<br/>
+			<div class="button button-waring" onclick="cleanHistory()">清空历史记录</div>
+			<br/>
+		</div>
+		<div id="play" class="rp">
+			<div id="ptime" class="ptime">00:00:00/00:00:00</div><br/>
+			<div id="progress" class="progress">
+				<div id="schedule" class="schedule"></div>
+			</div>
+			<br/>
+			<div class="stop" onclick="stopPlay(),outSet('停止播放！')"></div>
+		</div>
+		<div id="record" class="rp">
+			<div style="width:100%;height:20%;"></div>
+			<div class="rprogress">
+				<div class="rschedule"></div>
+			</div>
+			<br/>
+			<div id="rtime" class="rtime">00:00:00</div><br/>
+			<div class="stop" onclick="stopRecord()"></div>
+		</div>
+		<div id="output" style="display: none;">
+			Audio用于管理音频设备，可调用麦克风录制音频文件，也可播放音频文件。
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/immersed.js"></script>
+	<script type="text/javascript">
+		document.getElementById("dcontent").style.margin=0;
+	</script>
+
+</html>

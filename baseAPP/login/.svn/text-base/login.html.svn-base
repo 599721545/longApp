@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>APP DRE登录页面</title>
+		<link href="../css/custom/my-app.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/custom/login.css"/>
+	</head>
+
+	<body class="login">
+
+		<div class="mui-content1">
+			<div class="logo"><img src="../css/custom/img/APPDRELOGO.png" width="36%" /></div>
+			<form id='login-form' class="mui-input-group">
+				<div class="mui-input-row">
+					<label><img src="../css/custom/img/xiaoren.png"></label>
+					<div class="item-input"><input id='account' type="text" class="mui-input-clear mui-input" placeholder="请输入用户名"></div>
+				</div>
+				<div class="mui-input-row mima">
+					<label><img src="../css/custom/img/suo.png"></label>
+					<div class="item-input"><input id='password' type="password" class="mui-input-clear mui-input" placeholder="请输入密码"></div>
+				</div>
+			</form>
+			<form class="mui-input-group" style="display: none;">
+				<ul class="mui-table-view mui-table-view-chevron">
+					<li class="mui-table-view-cell">
+						自动登录
+						<div id="autoLogin" class="mui-switch">
+							<div class="mui-switch-handle"></div>
+						</div>
+					</li>
+				</ul>
+			</form>
+			<div class="mui-content-padded">
+				<div id='login' class="mui-btn mui-btn-block mui-btn-primary">登录</div>
+			</div>
+		</div>
+		<script src="../js/mui/mui.js"></script>
+		<script src="../js/mui/mui.enterfocus.js"></script>
+		<script src="../js/custom/app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/third_js/sha1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/third_js/StringBuilder.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			
+			
+			var mmap = null;
+			(function($, doc) {
+				$.init({
+					statusBarBackground: '#f7f7f7'
+				});
+				
+				$.plusReady(function() {
+					
+					
+					plus.navigator.setStatusBarStyle('dark');
+					plus.screen.lockOrientation("portrait-primary"); //仅支持竖屏显示
+					var settings = app.getSettings();
+					var state = app.getState();
+
+					//mmap = new plus.maps.Map("map");
+					var toMain = function() {
+						var w = plus.webview.create('../component/main_config/tab-webview-main.html', "main");
+						plus.webview.show(w, 'zoom-fade-out', 600, {
+							acceleration: 'auto'
+						});
+					};
+					//读取本地存储，检查是否为首次启动
+					var showGuide = plus.storage.getItem("lauchFlag"); //第一次返回null
+					var phoneVersion = plus.storage.getItem("localVersion") ? plus.storage.getItem("localVersion") : 0;
+					var appVersion = 0; //plus.runtime.version;//在manifest.json中配置时需要提交到App云端打包后才能生效，所以在真机运行的时候获取的是HBuilder 5+ Runtime的版本号8.8.0。
+					plus.runtime.getProperty(plus.runtime.appid, function(wgtinfo) {
+						appVersion = wgtinfo.version; //不用云打包依然有效。
+					});
+					/*if((appVersion <= phoneVersion) && showGuide) {
+						//非新版本，showGuide有值，说明已经显示过了，无需显示；
+						//关闭splash页面；
+						plus.navigator.closeSplashscreen();
+						plus.navigator.setFullscreen(false);
+					} else {*/
+					//显示启动导航
+						mui.openWindow({
+						id: 'guide',
+						url: 'guide.html',
+						styles: {
+							popGesture: "none"
+						},
+						show: {
+							aniShow: 'none'
+						},
+						waiting: {
+							autoShow: false
+						}
+						});
+					
+					//}
+
+					//检查 "登录状态/锁屏状态" 开始
+					if(settings.autoLogin && state.token && settings.gestures) {
+						$.openWindow({
+							url: 'unlock.html',
+							id: 'unlock',
+							show: {
+								aniShow: 'pop-in'
+							},
+							waiting: {
+								autoShow: false
+							}
+						});
+					} else if(settings.autoLogin && state.token) {
+						toMain(); //不修改代码不能放开，否则Android卡的要死， iOS没有事
+					} else {
+						/*
+												app.setState(null);
+												//第三方登录
+												var authBtns = ['qihoo', 'weixin', 'sinaweibo', 'qq']; //配置业务支持的第三方登录
+												var auths = {};
+												var oauthArea = doc.querySelector('.oauth-area');
+												plus.oauth.getServices(function(services) {
+													for (var i in services) {
+														var service = services[i];
+														auths[service.id] = service;
+														if (~authBtns.indexOf(service.id)) {
+															var isInstalled = app.isInstalled(service.id);
+															var btn = document.createElement('div');
+															//如果微信未安装，则为不启用状态
+															btn.setAttribute('class', 'oauth-btn' + (!isInstalled && service.id === 'weixin' ? (' disabled') : ''));
+															btn.authId = service.id;
+															btn.style.backgroundImage = 'url("img/' + service.id + '.png")'
+															oauthArea.appendChild(btn);
+														}
+													}
+													$(oauthArea).on('tap', '.oauth-btn', function() {
+														if (this.classList.contains('disabled')) {
+															plus.nativeUI.toast('您尚未安装微信客户端');
+															return;
+														}
+														var auth = auths[this.authId];
+														var waiting = plus.nativeUI.showWaiting();
+														auth.login(function() {
+															waiting.close();
+															plus.nativeUI.toast("登录认证成功");
+															auth.getUserInfo(function() {
+																plus.nativeUI.toast("获取用户信息成功");
+																var name = auth.userInfo.nickname || auth.userInfo.name;
+																app.createState(name, function() {
+																	toMain();
+																});
+															}, function(e) {
+																plus.nativeUI.toast("获取用户信息失败：" + e.message);
+															});
+														}, function(e) {
+															waiting.close();
+															plus.nativeUI.toast("登录认证失败：" + e.message);
+														});
+													});
+												}, function(e) {
+													oauthArea.style.display = 'none';
+													plus.nativeUI.toast("获取登录认证失败：" + e.message);
+												});
+											*/
+					}
+					//关闭 splash
+					setTimeout(function(){
+						plus.navigator.closeSplashscreen();
+						console.log("aaaaa");
+					},10000);
+					//检查 "登录状态/锁屏状态" 结束
+					var loginButton = doc.getElementById('login');
+					var accountBox = doc.getElementById('account');
+					var passwordBox = doc.getElementById('password');
+					var autoLoginButton = doc.getElementById("autoLogin");
+
+					loginButton.addEventListener('tap', function(event) {
+						plus.nativeUI.showWaiting('登录中...');
+						//檢查網絡
+						/*var con = plus.networkinfo.getCurrentType();
+						if(con > 1){
+							var loginInfo = {
+							account: accountBox.value,
+							password: passwordBox.value
+						};
+						app.login(loginInfo, function(err) {
+							if(err) {
+								plus.nativeUI.toast(err);
+								return;
+							}*/
+						plus.nativeUI.closeWaiting();
+						plus.nativeUI.toast('登陆成功！');
+						toMain();
+						/*});
+						}else{
+							plus.nativeUI.closeWaiting();
+							plus.nativeUI.toast('未连接网络，请检查网络连接');
+						}*/
+
+					});
+					$.enterfocus('#login-form input', function() {
+						$.trigger(loginButton, 'tap');
+					});
+					var backButtonPress = 0;
+					$.back = function(event) {
+						backButtonPress++;
+						if(backButtonPress > 1) {
+							plus.runtime.quit();
+						} else {
+							plus.nativeUI.toast('再按一次退出应用');
+						}
+						setTimeout(function() {
+							backButtonPress = 0;
+						}, 1000);
+						return false;
+					};
+				});
+			}(mui, document));
+		</script>
+	</body>
+
+</html>

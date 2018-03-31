@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/system.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="head">
+				设备
+			</div>
+			<ul class="mui-table-view">
+				<li id="geolocation" class="mui-table-view-cell">
+					<a class="mui-navigate-right">定位</a>
+				</li>
+				<li id="device-info" class="mui-table-view-cell">
+					<a class="mui-navigate-right">手机信息</a>
+				</li>
+				<li id="barcode_scan2" class="mui-table-view-cell">
+					<a class="mui-navigate-right">二维码扫描/摄像头</a>
+				</li>
+				<li id="gestureLock" class="mui-table-view-cell">
+					<a class="mui-navigate-right">解锁</a>
+				</li>
+			</ul>
+			<div class="head">
+				页面
+			</div>
+			<ul class="mui-table-view">
+				<li id="msg" class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						消息
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="form" class="mui-navigate-right">
+						表单
+					</a>
+				</li>
+				<li id="grid" class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						九宫格
+					</a>
+				</li>
+
+				<li id="list" class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						普通列表
+					</a>
+				</li>
+
+				<li id="card" class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						卡片列表
+					</a>
+				</li>
+				<li id="media_list" class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						多媒体列表
+					</a>
+				</li>
+			</ul>
+			<div class="head">
+				功能
+			</div>
+			<ul class="mui-table-view">
+				<li id="city" class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						区域选择
+					</a>
+				</li>
+				<li id="dt" class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						日期时间选择
+					</a>
+				</li>
+			</ul>
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../../../js/base/common/dyheader.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/base/resolve/resolve-js.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+
+			mui.plusReady(function() {
+				plus.key.addEventListener('keydown', function(e) {
+					console.log(e.keyCode);
+					if(e.keyCode == 4) {
+						var w = plus.webview.currentWebview();
+						plus.screen.lockOrientation("portrait-primary");
+						plus.webview.close(w);
+					}
+				});
+
+				document.getElementById("gestureLock").addEventListener('tap', function() {
+					plus.screen.lockOrientation("portrait-primary");
+					var w = plus.webview.create("../../lock/html/locker-dom.html", 'locker-dom');
+					plus.webview.show(w, 'zoom-fade-out', 600, {
+						acceleration: 'auto'
+					});
+				});
+				//控件
+				/*document.getElementById("design").addEventListener('tap', function() {
+					var w = plus.webview.create('../../control/html/design-test.html');
+					plus.webview.show(w, 'zoom-fade-out', 600, {
+						acceleration: 'auto'
+					});
+				});*/
+
+				document.getElementById("msg").addEventListener('tap', function() {
+					var w = plus.webview.create('../../chat/html/chat.html');
+					plus.webview.show(w, 'zoom-fade-out', 600, {
+						acceleration: 'auto'
+					});
+				});
+
+				document.getElementById("form").addEventListener('tap', function() {
+					var w = plus.webview.create('../../control/html/form.html');
+					plus.webview.show(w, 'zoom-fade-out', 600, {
+						acceleration: 'auto'
+					});
+				});
+
+				document.getElementById("list").addEventListener('tap', function() {
+					var w = plus.webview.create('../../control/html/list.html');
+					plus.webview.show(w, 'zoom-fade-out', 600, {
+						acceleration: 'auto'
+					});
+				});
+
+				document.getElementById("media_list").addEventListener('tap', function() {
+					var w = plus.webview.create('../../control/html/media_list.html');
+					plus.webview.show(w, 'zoom-fade-out', 600, {
+						acceleration: 'auto'
+					});
+				});
+
+				document.getElementById("card").addEventListener('tap', function() {
+					var w = plus.webview.create('../../control/html/card.html');
+					plus.webview.show(w, 'zoom-fade-out', 600, {
+						acceleration: 'auto'
+					});
+				});
+
+				document.getElementById("grid").addEventListener('tap', function() {
+					var w = plus.webview.create('../../control/html/grid-pagination.html');
+					plus.webview.show(w, 'zoom-fade-out', 600, {
+						acceleration: 'auto'
+					});
+				});
+
+				document.getElementById("dt").addEventListener('tap', function() {
+					var w = plus.webview.create('../../control/html/dtpicker.html');
+					plus.webview.show(w, 'zoom-fade-out', 600, {
+						acceleration: 'auto'
+					});
+				});
+
+				document.getElementById("city").addEventListener('tap', function() {
+					dyheader.init('../../city/html/city.html', 'cityselect', {});
+				});
+
+				//设备
+				document.getElementById("barcode_scan2").addEventListener('tap', function() {
+					var w = plus.webview.create('../../equipment/html/barcode_scan2.html');
+					plus.webview.show(w, 'zoom-fade-out', 600, {
+						acceleration: 'auto'
+					});
+				});
+				document.getElementById("geolocation").addEventListener('tap', function() {
+					var w = plus.webview.create('../../equipment/html/geolocation.html');
+					plus.webview.show(w, 'zoom-fade-out', 600, {
+						acceleration: 'auto'
+					});
+				});
+				document.getElementById("device-info").addEventListener('tap', function() {
+					var w = plus.webview.create('../../equipment/html/device-info.html');
+					plus.webview.show(w, 'zoom-fade-out', 600, {
+						acceleration: 'auto'
+					});
+				});
+			});
+
+			function back(id) {
+				var w = plus.webview.getWebviewById(id);
+				w.close();
+			}
+		</script>
+	</body>
+
+</html>

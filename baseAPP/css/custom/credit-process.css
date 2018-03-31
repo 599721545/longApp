@@ -1,0 +1,36 @@
+/*------credit_process.html样式开始-----*/
+
+.creditProcess .mui-navigate-right {
+	padding-left: 40px !important;
+}
+
+.creditProcess .shenpi {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 12px 0 12px 15px;
+	font-size: 16px;
+	color: #000000;
+	border-bottom: 1px solid #c8c7cc;
+}
+
+.creditProcess .list-block {
+	width: 100%;
+	height: 100px;
+	margin-top: 50px;
+}
+
+.creditProcess textarea {
+	height: 90px;
+	border: none;
+	border-bottom: 1px solid #c8c7cc;
+}
+
+.creditProcess .mui-card {
+	margin: 15px;
+}
+
+.mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after {
+	color: #1EACF0;
+}

@@ -1,0 +1,268 @@
+[
+    {
+        "groupName": "京东服务",
+        "field":"ff",
+        "collapse": "no",
+        "type": "single",
+        "data": [
+            {
+                "text": "京东配送京东配送京东配送京东配送京东配送京东配送京东配送京东配送",
+                "value": "jdps"
+            },
+            {
+                "text": "京东配送2",
+                "value": "jdps2"
+            },
+            {
+                "text": "京东配送3",
+                "value": "jdps3"
+            },
+            {
+                "text": "京东配送4",
+                "value": "jdps4"
+            },
+            {
+                "text": "京东配送5",
+                "value": "jdps5"
+            }
+        ]
+    },
+    {
+        "groupName": "品牌",
+        "field":"pp",
+        "collapse": "part",
+        "type": "multiple",
+        "data": [
+            {
+                "text": "耐克",
+                "value": "nk"
+            },
+            {
+                "text": "阿迪达斯",
+                "value": "adds",
+                "selected": true
+            },
+            {
+                "text": "阿迪达斯2",
+                "value": "adds2"
+            },
+            {
+                "text": "耐克2",
+                "value": "nk2",
+                "selected":true
+            },
+            {
+                "text": "耐克",
+                "value": "nk"
+            },
+            {
+                "text": "阿迪达斯",
+                "value": "adds"
+            },
+            {
+                "text": "阿迪达斯2",
+                "value": "adds2"
+            },
+            {
+                "text": "耐克2",
+                "value": "nk2"
+            },
+            {
+                "text": "耐克",
+                "value": "nk"
+            },
+            {
+                "text": "阿迪达斯",
+                "value": "adds"
+            },
+            {
+                "text": "阿迪达斯2",
+                "value": "adds2"
+            },
+            {
+                "text": "耐克2",
+                "value": "nk2"
+            },{
+                "text": "耐克",
+                "value": "nk"
+            },
+            {
+                "text": "阿迪达斯",
+                "value": "adds",
+                "selected": true
+            },
+            {
+                "text": "阿迪达斯2",
+                "value": "adds2"
+            },
+            {
+                "text": "耐克2",
+                "value": "nk2",
+                "selected":true
+            },
+            {
+                "text": "耐克",
+                "value": "nk"
+            },
+            {
+                "text": "阿迪达斯",
+                "value": "adds"
+            },
+            {
+                "text": "阿迪达斯2",
+                "value": "adds2"
+            },
+            {
+                "text": "耐克2",
+                "value": "nk2"
+            },
+            {
+                "text": "耐克",
+                "value": "nk"
+            },
+            {
+                "text": "阿迪达斯",
+                "value": "adds"
+            },
+            {
+                "text": "阿迪达斯2",
+                "value": "adds2"
+            },
+            {
+                "text": "耐克2",
+                "value": "nk2"
+            }
+        ]
+    },
+    {
+        "groupName": "查看全部",
+        "field":"all",
+        "collapse": "checkAll",
+        "data": [
+            {
+                "text": "全部",
+                "value": ""
+            },
+            {
+                "text": "耐克",
+                "value": "nk",
+                "children":[
+                	{
+		                "text": "耐克2",
+		                "value": "nk2",
+		                "children":[
+		                	{
+				                "text": "耐克3",
+				                "value": "nk3",
+				                "children":[
+				                	{
+						                "text": "耐克4",
+						                "value": "nk4"
+						            },
+						            {
+						                "text": "耐克44",
+						                "value": "nk44"
+						            }
+				                ]
+				            }
+		                ]
+		            },
+		            {
+		                "text": "耐克22",
+		                "value": "nk22"
+		            }
+                ]
+            },
+            {
+                "text": "阿迪达斯",
+                "value": "adds",
+                "children":[
+                	{
+		                "text": "阿迪达斯2",
+		                "value": "adds2",
+		                "children":[
+		                	{
+				                "text": "阿迪达斯3",
+				                "value": "adds3",
+				                "children":[
+				                	{
+						                "text": "阿迪达斯4",
+						                "value": "adds4"
+						            }
+				                ]
+				            },
+				            {
+				                "text": "阿迪达斯33",
+				                "value": "adds33",
+				                "children":[
+				                	{
+						                "text": "阿迪达斯44",
+						                "value": "adds44"
+						            }
+				                ]
+				            }
+		                ]
+		            }
+                ]
+            }
+        ]
+    },
+    {
+        "groupName": "品牌",
+        "field":"pp2",
+        "collapse": "all",
+        "type": "multiple",
+        "data": [
+            {
+                "text": "耐克",
+                "value": "nk"
+            },
+            {
+                "text": "阿迪达斯",
+                "value": "adds",
+                "selected": true
+            },
+            {
+                "text": "阿迪达斯2",
+                "value": "adds2"
+            },
+            {
+                "text": "耐克2",
+                "value": "nk2",
+                "selected":true
+            },
+            {
+                "text": "耐克",
+                "value": "nk"
+            },
+            {
+                "text": "阿迪达斯",
+                "value": "adds"
+            },
+            {
+                "text": "阿迪达斯2",
+                "value": "adds2"
+            },
+            {
+                "text": "耐克2",
+                "value": "nk2"
+            },
+            {
+                "text": "耐克",
+                "value": "nk"
+            },
+            {
+                "text": "阿迪达斯",
+                "value": "adds"
+            },
+            {
+                "text": "阿迪达斯2",
+                "value": "adds2"
+            },
+            {
+                "text": "耐克2",
+                "value": "nk2"
+            }
+        ]
+    }
+]
